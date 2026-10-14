@@ -1,0 +1,64 @@
+[
+  {
+    "timestamp": "2026-10-13T12:52:15.478057+00:00",
+    "duration_sec": 1.844,
+    "status": "SUCCESS",
+    "postgresql": {
+      "status": "SUCCESS",
+      "type": "postgresql",
+      "filename": "jewellery_postgres_20261013_125213.dump",
+      "path": "/Users/amol/Developer/search/deploy/staging/backup/jewellery_postgres_20261013_125213.dump",
+      "size_bytes": 149817,
+      "sha256": "cbf62dfdf3aa810913e2cd4a0b880bb10fc780eba4539c6510ed500acad1bca2",
+      "duration_sec": 1.174,
+      "timestamp": "20261013_125213"
+    },
+    "qdrant": {
+      "status": "SUCCESS",
+      "type": "qdrant",
+      "filename": "jewellery_catalog_mobilenetv4_v1-1717057348035462-2026-10-13-12-52-15.snapshot",
+      "path": "/Users/amol/Developer/search/deploy/staging/backup/jewellery_catalog_mobilenetv4_v1-1717057348035462-2026-10-13-12-52-15.snapshot",
+      "size_bytes": 5740032,
+      "sha256": "2a69c6295eebbd8e8d87d0631f2841949b693dcf2c6f16249c2a6c6748f80303",
+      "duration_sec": 0.637
+    },
+    "retention": {
+      "retention_max_copies": 5,
+      "pruned_count": 1,
+      "pruned_files": [
+        "qdrant_staging.snapshot"
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-10-13T12:52:17.766210+00:00",
+    "duration_sec": 1.281,
+    "status": "SUCCESS",
+    "postgresql": {
+      "status": "SUCCESS",
+      "type": "postgresql",
+      "filename": "jewellery_postgres_20261013_125216.dump",
+      "path": "/Users/amol/Developer/search/deploy/staging/backup/jewellery_postgres_20261013_125216.dump",
+      "size_bytes": 149817,
+      "sha256": "603bec20a91690e30d3d6ef98ddf8be2a75d35dde3b9418afe4ccc2aca3fb9f0",
+      "duration_sec": 0.563,
+      "timestamp": "20261013_125216"
+    },
+    "qdrant": {
+      "status": "SUCCESS",
+      "type": "qdrant",
+      "filename": "jewellery_catalog_mobilenetv4_v1-1717057348035462-2026-10-13-12-52-17.snapshot",
+      "path": "/Users/amol/Developer/search/deploy/staging/backup/jewellery_catalog_mobilenetv4_v1-1717057348035462-2026-10-13-12-52-17.snapshot",
+      "size_bytes": 5740032,
+      "sha256": "15b5e7c7c017c85b55a04359840277cdc3b1514a080742c306ed0deeb0789056",
+      "duration_sec": 0.692
+    },
+    "retention": {
+      "retention_max_copies": 5,
+      "pruned_count": 1,
+      "pruned_files": [
+        "jewellery_catalog_mobilenetv4_v1-1717057348035462-2026-10-12-15-01-28.snapshot"
+      ]
+    }
+  }
+]

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA | Jewellery Visual Retrieval Engine</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <div class="brand-icon">✧</div>
+      <div>
+        <div class="brand-title">AURA <span>JEWELLERY SEARCH</span></div>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <a href="/annotate" class="btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center;">🔬 SKU Annotator</a>
+      <a href="/region-annotate" class="btn-secondary" style="text-decoration: none; display: inline-flex; align-items: center;">🎯 Region Studio</a>
+      <button class="btn-secondary" id="btnOpenEval">📊 Benchmark & Evaluation</button>
+      <button class="btn-secondary" id="btnToggleDiag">⚙️ Diagnostics Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Left Sidebar: Query Upload & Search Settings -->
+    <aside class="sidebar">
+      <!-- Query Upload Panel -->
+      <div class="panel">
+        <div class="panel-title">1. Query Photograph</div>
+        <div class="dropzone" id="dropzone">
+          <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" style="display: none;">
+          <div class="dropzone-prompt" id="dropPrompt">
+            <div class="dropzone-icon">💎</div>
+            <p><strong>Click to upload</strong> or drag & drop</p>
+            <p style="font-size: 0.75rem;">JPG, PNG, or WEBP up to 10MB</p>
+          </div>
+          <div class="preview-container" id="previewContainer">
+            <div style="position: relative; display: inline-block; max-width: 100%;">
+              <img id="previewImg" class="preview-img" alt="Query Preview">
+              <div id="queryBbox" style="display: none; position: absolute; border: 2px solid #10b981; background: rgba(16, 185, 129, 0.2); pointer-events: none; border-radius: 4px; box-sizing: border-box;">
+                <span id="queryBboxLabel" style="position: absolute; top: -18px; left: -2px; background: #10b981; color: white; font-size: 10px; font-weight: bold; padding: 1px 4px; border-radius: 2px; white-space: nowrap;"></span>
+              </div>
+            </div>
+            <button type="button" class="btn-change-image" id="btnChangeImage">Change photograph</button>
+            <div style="margin-top: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+              <label class="toggle-label" style="font-size: 0.75rem; margin: 0; cursor: pointer;">
+                <input type="checkbox" id="checkAttentionMap">
+                <span>Show Soft Attention Heatmap</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quality Assessment Feedback Box -->
+        <div id="qualityBox" class="quality-box"></div>
+      </div>
+
+      <!-- Search Controls Panel -->
+      <div class="panel">
+        <div class="panel-title">2. Search Controls</div>
+        
+        <div class="control-group">
+          <label class="control-label" for="modelSelect">Vision Backbone Model</label>
+          <select id="modelSelect" class="select-control">
+            <option value="dinov2" selected>DINOv2 (vit_small_patch14) — Micro-Geometry</option>
+            <option value="dinov3">DINOv3 (vit_small_patch16) — Dense Rotational Features</option>
+            <option value="soft_attention">Soft Attention (DINOv3 + Spatial Attention)</option>
+            <option value="hybrid">Hybrid (DINOv2 + DINOv3 RRF)</option>
+            <option value="hybrid_rerank">Hybrid + Patch Chamfer Rerank (EXP-004)</option>
+            <option value="clip">OpenCLIP (ViT-B-32) — Multimodal Semantics</option>
+          </select>
+        </div>
+
+        <div class="control-group" id="attentionModeGroup">
+          <label class="control-label" for="attentionModeSelect">Spatial Attention Mode</label>
+          <select id="attentionModeSelect" class="select-control">
+            <option value="none">Disabled (Standard Global / CLS)</option>
+            <option value="soft_combined" selected>Combined Multi-Cue (Foreground + Component)</option>
+            <option value="soft_foreground">Foreground Saliency (Non-white / Edge)</option>
+            <option value="soft_region">Soft Component Region (Decay from Gem/Pendant)</option>
+            <option value="soft_uniform">Uniform Spatial Pooling</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="searchModeSelect">Retrieval Mode</label>
+          <select id="searchModeSelect" class="select-control">
+            <option value="similar" selected>Visually Similar Designs</option>
+            <option value="exact">Exact SKU / Piece Matching Only</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="categoryFilter">Category Filter</label>
+          <select id="categoryFilter" class="select-control">
+            <option value="all" selected>All Categories (Rings & Necklaces)</option>
+            <option value="ring">Rings Only</option>
+            <option value="necklace">Necklaces Only</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label" for="topKSelect">Max Results</label>
+          <select id="topKSelect" class="select-control">
+            <option value="5">Top 5 Candidates</option>
+            <option value="10" selected>Top 10 Candidates</option>
+            <option value="20">Top 20 Candidates</option>
+          </select>
+        </div>
+
+        <!-- Preprocessing / Enhancement Options (Section 13) -->
+        <div class="control-group" id="enhancementOptions">
+          <label class="control-label">Query Enhancement Options</label>
+          <div class="toggle-group">
+            <label class="toggle-label">
+              <input type="checkbox" id="checkAutoEnhance" checked>
+              <span>Smart Exposure & Quality Gating</span>
+            </label>
+            <label class="toggle-label">
+              <input type="checkbox" id="checkClahe">
+              <span>Force CLAHE Contrast Enhancement</span>
+            </label>
+            <label class="toggle-label">
+              <input type="checkbox" id="checkDenoise">
+              <span>Bilateral Facet-Preserving Denoise</span>
+            </label>
+            <label class="toggle-label">
+              <input type="checkbox" id="checkCrop">
+              <span>Jewellery Contour Foreground Crop</span>
+            </label>
+          </div>
+        </div>
+
+        <button id="btnSearch" class="btn-search" disabled>
+          <span id="btnSearchText">Select Image to Search</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Right Pane: Results Gallery -->
+    <section class="results-pane">
+      <!-- Diagnostics Bar -->
+      <div id="diagBar" class="diagnostics-bar">
+        <div><strong>Search Diagnostics:</strong> <span id="diagModel">Model: dinov2</span></div>
+        <div class="diagnostics-badges">
+          <span>Total: <span class="diag-pill" id="diagTotalMs">0ms</span></span>
+          <span>Preproc: <span class="diag-pill" id="diagPreprocMs">0ms</span></span>
+          <span>Encoder: <span class="diag-pill" id="diagEncMs">0ms</span></span>
+          <span>Vector Search: <span class="diag-pill" id="diagSearchMs">0ms</span></span>
+        </div>
+      </div>
+
+      <!-- Results Grid Container -->
+      <div id="resultsContainer">
+        <!-- Initial Blank State -->
+        <div class="state-box" id="initialState">
+          <div class="state-icon">💎</div>
+          <h3>Fine Jewellery Visual Retrieval</h3>
+          <p>Upload a photograph of a ring or necklace to search across diamond cuts, prong geometries, and chain styles.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal: Evaluation & Benchmarks View -->
+  <div class="modal-overlay" id="evalModal">
+    <div class="modal-content">
+      <button class="modal-close" id="btnCloseEval">&times;</button>
+      <h2 style="color: var(--accent-gold-light); margin-bottom: 0.5rem;">Engine Evaluation & Benchmarks</h2>
+      <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.5rem;">
+        Empirical measurements on 60 held-out evaluation queries with verified twin clusters.
+      </p>
+      <div id="evalContent">Loading evaluation metrics...</div>
+    </div>
+  </div>
+
+  <!-- Modal: Image Lightbox / Inspector -->
+  <div class="modal-overlay" id="lightboxModal">
+    <div class="modal-content" style="max-width: 600px; text-align: center;">
+      <button class="modal-close" id="btnCloseLightbox">&times;</button>
+      <img id="lightboxImg" style="max-width: 100%; max-height: 500px; border-radius: var(--radius-md); margin-bottom: 1rem;" src="" alt="Enlarged Jewellery">
+      <h3 id="lightboxTitle" style="color: var(--text-main); margin-bottom: 0.5rem;"></h3>
+      <p id="lightboxDetails" style="color: var(--text-muted); font-size: 0.875rem;"></p>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+storage:
+  storage_path: data/qdrant_storage
+  snapshots_path: data/qdrant_snapshots
+  on_disk_payload: true
+
+service:
+  host: 127.0.0.1
+  http_port: 6333
+  grpc_port: 6334
+  enable_cors: true
+
+telemetry_disabled: true

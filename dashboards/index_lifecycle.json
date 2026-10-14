@@ -1,0 +1,53 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "title": "Index Point Counts (Active Targets)",
+      "type": "stat",
+      "gridPos": { "h": 6, "w": 12, "x": 0, "y": 0 },
+      "targets": [
+        {
+          "expr": "jewellery_index_points_count",
+          "legendFormat": "{{target}}"
+        }
+      ]
+    },
+    {
+      "title": "Index Promotion & Rollback Events (5m Rate)",
+      "type": "timeseries",
+      "gridPos": { "h": 6, "w": 12, "x": 12, "y": 0 },
+      "targets": [
+        {
+          "expr": "sum(rate(jewellery_index_lifecycle_operations_total[5m])) by (operation, status)",
+          "legendFormat": "{{operation}} ({{status}})"
+        }
+      ]
+    },
+    {
+      "title": "Total Lifecycle Operations Over Time",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 6 },
+      "targets": [
+        {
+          "expr": "jewellery_index_lifecycle_operations_total",
+          "legendFormat": "{{operation}} - {{status}}"
+        }
+      ]
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 38,
+  "tags": ["jewellery", "lifecycle", "promotions", "ph009"],
+  "templating": { "list": [] },
+  "time": { "from": "now-6h", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Index Lifecycle & Alias Operations",
+  "version": 1
+}

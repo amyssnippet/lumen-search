@@ -1,0 +1,154 @@
+# ==============================================================================
+# GitHub Actions CI/CD Workflow for Jewellery Visual Retrieval Engine
+# Multi-Stage Quality Gate: Static Analysis -> Migrations & Pytest -> Container Build
+# ==============================================================================
+
+name: CI - Production Containerization & Quality Gate
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - 'release/**'
+  pull_request:
+    branches:
+      - main
+      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ----------------------------------------------------------------------------
+  # Job 1: Static Code Analysis, Linting & AST Security Auditing
+  # ----------------------------------------------------------------------------
+  static-analysis-and-security:
+    name: Lint & Security Audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Linting & Security Tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff>=0.4.0 bandit>=1.7.8 pip-audit>=2.7.3
+
+      - name: Run Ruff Static Linting
+        run: |
+          ruff check app/ engine/ scripts/ tests/
+
+      - name: Run Bandit AST Security Scan
+        run: |
+          bandit -r app/ engine/ -ll -i
+
+      - name: Run Dependency Vulnerability Audit
+        run: |
+          pip-audit -r requirements.prod.txt || echo "::warning::Vulnerability audit identified advisory issues."
+
+  # ----------------------------------------------------------------------------
+  # Job 2: Schema Migrations & Full Regression Test Suite
+  # ----------------------------------------------------------------------------
+  test-and-migrations:
+    name: Migrations & Automated Tests
+    needs: static-analysis-and-security
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: jewellery_test_db
+          POSTGRES_USER: test_user
+          POSTGRES_PASSWORD: test_password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 5
+
+      redis:
+        image: redis:7-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 5
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libpq-dev libgl1 libglib2.0-0
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.prod.txt -r requirements.dev.txt
+
+      - name: Validate Alembic Migration on Clean Database
+        env:
+          DATABASE_URL: postgresql://test_user:test_password@localhost:5432/jewellery_test_db
+        run: |
+          alembic upgrade head
+          alembic current
+
+      - name: Run Pytest Regression Suite
+        env:
+          DATABASE_URL: postgresql://test_user:test_password@localhost:5432/jewellery_test_db
+          REDIS_URL: redis://localhost:6379/0
+          REQUIRE_AUTH: "false"
+        run: |
+          pytest tests/ -v --durations=10
+
+  # ----------------------------------------------------------------------------
+  # Job 3: Production Container Build & Liveness Smoke Test
+  # ----------------------------------------------------------------------------
+  container-build-and-verify:
+    name: Container Build & Verification
+    needs: test-and-migrations
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Production Docker Image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: jewellery-retrieval-app:ci
+          load: true
+
+      - name: Test Container Liveness Probe
+        run: |
+          docker run -d --name test_app -p 8000:8000 -e REQUIRE_AUTH=false jewellery-retrieval-app:ci
+          sleep 5
+          curl --fail --retry 5 --retry-delay 2 http://localhost:8000/health/live
+          docker stop test_app && docker rm test_app

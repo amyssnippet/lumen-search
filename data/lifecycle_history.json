@@ -1,0 +1,513 @@
+{
+  "production_alias": "test_alias_ph009",
+  "candidate_collection": null,
+  "history": [
+    {
+      "id": "851689f7-124e-4f93-92de-183a70c14182",
+      "timestamp": 1791735732.305286,
+      "promoted_collection": "jewellery_catalog_mobilenetv4_v1",
+      "previous_collection": null,
+      "alias_name": "jewellery_catalog_mobilenetv4",
+      "actor_id": "bootstrap",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 432
+      }
+    },
+    {
+      "id": "922f8f01-0c37-490a-b9a8-1c4a24b9629a",
+      "timestamp": 1791736208.5519302,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "d15f3e85-9958-4c85-ba2d-c21884e08263",
+      "timestamp": 1791736208.7244318,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "04929da5-3506-4c17-826e-037590fb4b19",
+      "timestamp": 1791736271.200552,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "b57099d0-6023-4ad6-b684-ddcb43b4f901",
+      "timestamp": 1791736271.333201,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "a2da5fb8-59ce-4bf9-bba3-cbe1518f59d8",
+      "timestamp": 1791736454.364274,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "fe93c7fa-76d1-4013-b011-25bfb2472497",
+      "timestamp": 1791736454.441667,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "22d53031-d496-46f6-9aad-7c71ca0ad54a",
+      "timestamp": 1791736652.077268,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "02917baa-63d2-466d-a496-fe0e823ebb5a",
+      "timestamp": 1791736652.171563,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "e75ea069-7d09-46a8-8445-634478740380",
+      "timestamp": 1791736796.032442,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "ea30299e-8713-4af0-b2d2-c9f300b49307",
+      "timestamp": 1791736796.160068,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "19abaeae-45a9-45da-a728-d788e7d2a29d",
+      "timestamp": 1791813933.0659368,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "ef35749e-a7e8-4ed9-bed0-91b268c66597",
+      "timestamp": 1791813933.302363,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "72d90a7e-7f27-4a04-9540-4e75b8bd1fa7",
+      "timestamp": 1791816710.893832,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "e6f07f75-9c15-4dc8-a800-52a00c4989ff",
+      "timestamp": 1791816711.021305,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "55c22038-59cb-41e1-8e74-ca05852bf9a5",
+      "timestamp": 1791817745.8007228,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "c18e253c-4cce-41d8-a2b9-1a0ec6b799d8",
+      "timestamp": 1791817745.893711,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "277feb16-d617-4dad-922c-313aed4e9405",
+      "timestamp": 1791817864.013537,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "d1ac1f4a-31a0-42a3-8480-a5c961d55fc8",
+      "timestamp": 1791817864.182893,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "de534c38-4dc1-40f0-bab5-b2526d4b9ccf",
+      "timestamp": 1791823494.463413,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "7d659719-9718-4a2c-a153-f7820580f8b1",
+      "timestamp": 1791823494.541814,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "4f3474be-9269-4081-89af-9e92fa783caa",
+      "timestamp": 1791824520.380415,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "acf111d8-f4e9-4ac4-832b-ceaf4571b184",
+      "timestamp": 1791824520.463105,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "2c17ead6-c094-45d2-ac32-bb5736e39258",
+      "timestamp": 1791895138.034474,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "8618f591-4bb0-4bb9-8b66-6d4c914f8dba",
+      "timestamp": 1791895138.293443,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "14f0a25b-cd66-4476-8e6c-878ffb0b55d5",
+      "timestamp": 1791896034.59642,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "333f6ced-2676-4e60-9459-4af7b302fa7b",
+      "timestamp": 1791896034.745386,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "4bce5177-4e75-45ca-bff8-6ea5e207139d",
+      "timestamp": 1791904294.479747,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "6a0ad90d-2546-4fe6-a8ef-1b301b8059b6",
+      "timestamp": 1791904294.640796,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "9c94b376-b6ee-4be2-8b16-36df5db7c974",
+      "timestamp": 1791904391.7760792,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "9c7a292d-c43f-4322-a9b9-4a614dceef31",
+      "timestamp": 1791904392.0007732,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "f58bae82-439c-4860-876c-ba6bd7a5717f",
+      "timestamp": 1791978244.597537,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "272a6a45-5ebb-4081-a115-07bd742e60d2",
+      "timestamp": 1791978244.7946408,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "42187cce-4a4f-4a49-9efc-96e4a764bfdf",
+      "timestamp": 1791979304.668011,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "ffa429aa-5980-473c-805a-498f82d89063",
+      "timestamp": 1791979304.8080902,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "3f9db17e-a0d7-47b0-9b2d-6450bd3fc99f",
+      "timestamp": 1791979440.9091709,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "f5ad7a46-e154-4c4d-acf1-7d974f98195a",
+      "timestamp": 1791979441.10516,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    },
+    {
+      "id": "8cfff4f7-4c8a-4b83-838d-050de59bd91f",
+      "timestamp": 1791981643.865885,
+      "promoted_collection": "test_col_ph009_cand",
+      "previous_collection": "test_col_ph009_prod",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "SUCCESS",
+      "rollback_eligible": true,
+      "metadata": {
+        "points_count": 1
+      }
+    },
+    {
+      "id": "b574b709-c111-49a7-a7e4-0315ebe7728e",
+      "timestamp": 1791981644.1294222,
+      "promoted_collection": "test_col_ph009_prod",
+      "previous_collection": "test_col_ph009_cand",
+      "alias_name": "test_alias_ph009",
+      "actor_id": "test_runner",
+      "status": "ROLLBACK_SUCCESS",
+      "rollback_eligible": false,
+      "metadata": {
+        "reason": "operator_requested_rollback"
+      }
+    }
+  ]
+}

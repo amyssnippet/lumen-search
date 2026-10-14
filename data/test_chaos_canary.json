@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "candidate_collection": "jewellery_catalog_mobilenetv4_candidate_eval",
+  "percentage": 100,
+  "allowlisted_tenants": [],
+  "salt": "jvr_canary_salt_2026",
+  "fallback_to_production": true,
+  "updated_at": 1791981647.487993,
+  "updated_by": "system"
+}

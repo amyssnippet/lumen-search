@@ -1,0 +1,40 @@
+# Git and VCS
+.git/
+.gitignore
+
+# Python virtual environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local agent and brain directories
+.agent/
+brain/
+scratch/
+output/
+
+# Temporary and log files
+*.log
+*.tmp
+.DS_Store
+**/.DS_Store
+
+# Development environment files
+# Secrets and Credentials
+.env
+.env.*
+.proxy_secret*
+*.inc
+proxy_secret.inc
+
+# Docker compose overrides
+docker-compose.override.yml
+
+# Web frontend directory
+web/
+

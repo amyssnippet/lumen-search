@@ -1,0 +1,157 @@
+# ==============================================================================
+# Production Docker Compose for Jewellery Visual Retrieval Engine
+# Architecture: FastAPI + PostgreSQL 16 + Redis 7 + Qdrant 1.19.2
+#
+# OPERATIONAL NOTICE:
+# This compose manifest orchestrates a single-host container topology.
+# A single-host Docker Compose deployment does NOT constitute High Availability (HA).
+# In production cloud environments requiring HA SLAs, deploy PostgreSQL as Multi-AZ RDS,
+# Redis as an ElastiCache Cluster, and Qdrant in distributed consensus mode across
+# multiple failure domains / availability zones.
+# ==============================================================================
+
+networks:
+  jewellery_internal:
+    driver: bridge
+    internal: false # allows outbound internet for foundation model download if needed
+
+volumes:
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+  qdrant_storage:
+    driver: local
+  catalog_data:
+    driver: local
+
+services:
+  # ----------------------------------------------------------------------------
+  # PostgreSQL 16: Relational Catalog, Identity, Scopes & Audit Logging
+  # ----------------------------------------------------------------------------
+  postgres:
+    image: postgres:16-alpine
+    container_name: jewellery_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-jewellery_catalog}
+      POSTGRES_USER: ${POSTGRES_USER:-jewellery_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in production}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-jewellery_user} -d ${POSTGRES_DB:-jewellery_catalog}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.00'
+          memory: 4G
+        reservations:
+          cpus: '1.00'
+          memory: 1G
+    networks:
+      - jewellery_internal
+
+  # ----------------------------------------------------------------------------
+  # Redis 7: Distributed Token-Bucket Rate Limiter & Fast Cache
+  # ----------------------------------------------------------------------------
+  redis:
+    image: redis:7-alpine
+    container_name: jewellery_redis
+    restart: unless-stopped
+    command: ["redis-server", "--save", "60", "1", "--loglevel", "notice"]
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 1G
+        reservations:
+          cpus: '0.50'
+          memory: 256M
+    networks:
+      - jewellery_internal
+
+  # ----------------------------------------------------------------------------
+  # Qdrant 1.19.2: Distributed Vector Database for High-Dimensional Retrieval
+  # ----------------------------------------------------------------------------
+  qdrant:
+    image: qdrant/qdrant:v1.19.2
+    container_name: jewellery_qdrant
+    restart: unless-stopped
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:6333/readyz || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    deploy:
+      resources:
+        limits:
+          cpus: '4.00'
+          memory: 8G
+        reservations:
+          cpus: '2.00'
+          memory: 4G
+    networks:
+      - jewellery_internal
+
+  # ----------------------------------------------------------------------------
+  # FastAPI Application: Visual Retrieval Engine & Enterprise Multi-Tenant API
+  # ----------------------------------------------------------------------------
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jewellery-retrieval-app:0.2.0
+    container_name: jewellery_app
+    restart: unless-stopped
+    ports:
+      - "${PORT:-8000}:8000"
+    environment:
+      APP_ENV: production
+      DATABASE_URL: postgresql://${POSTGRES_USER:-jewellery_user}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-jewellery_catalog}
+      REDIS_URL: redis://redis:6379/0
+      QDRANT_HOST: qdrant
+      QDRANT_PORT: "6333"
+      REQUIRE_AUTH: "${REQUIRE_AUTH:-true}"
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:?JWT_SECRET_KEY must be set in production}
+      LOG_LEVEL: "${LOG_LEVEL:-INFO}"
+    volumes:
+      - catalog_data:/app/data
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health/live"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          cpus: '4.00'
+          memory: 8G
+        reservations:
+          cpus: '2.00'
+          memory: 4G
+    networks:
+      - jewellery_internal

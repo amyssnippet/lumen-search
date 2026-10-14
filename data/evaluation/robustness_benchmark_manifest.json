@@ -1,0 +1,936 @@
+{
+  "version": "v1.0_robustness",
+  "description": "Controlled Jewellery Retrieval Robustness Benchmark across 5 explicit slices",
+  "slices": {
+    "slice_a_real_multiview": [
+      {
+        "query_id": "real_mv_ring_078",
+        "query_path": "Jewellery_Data/ring/ring_078.jpg",
+        "target_sku": "SKU-RING-078",
+        "target_catalog_id": "ring_079",
+        "category": "ring",
+        "slice": "slice_a_real_multiview",
+        "description": "Physical ring plain band crown view matching 45deg view"
+      },
+      {
+        "query_id": "real_mv_ring_080",
+        "query_path": "Jewellery_Data/ring/ring_080.jpg",
+        "target_sku": "SKU-RING-080",
+        "target_catalog_id": "ring_164",
+        "category": "ring",
+        "slice": "slice_a_real_multiview",
+        "description": "Physical ring round solitaire crown view matching 45deg view"
+      },
+      {
+        "query_id": "real_mv_ring_081",
+        "query_path": "Jewellery_Data/ring/ring_081.jpg",
+        "target_sku": "SKU-RING-081",
+        "target_catalog_id": "ring_108",
+        "category": "ring",
+        "slice": "slice_a_real_multiview",
+        "description": "Physical ring yellow gold solitaire crown matching angle view"
+      },
+      {
+        "query_id": "real_mv_ring_084",
+        "query_path": "Jewellery_Data/ring/ring_084.jpg",
+        "target_sku": "SKU-RING-084",
+        "target_catalog_id": "ring_181",
+        "category": "ring",
+        "slice": "slice_a_real_multiview",
+        "description": "Physical ring pave band crown matching angle view"
+      },
+      {
+        "query_id": "real_mv_ring_155",
+        "query_path": "Jewellery_Data/ring/ring_155.jpg",
+        "target_sku": "SKU-RING-155",
+        "target_catalog_id": "ring_172",
+        "category": "ring",
+        "slice": "slice_a_real_multiview",
+        "description": "Physical ring emerald halo crown matching profile view"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_10",
+        "query_path": "Jewellery_Data/necklace/necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_32",
+        "target_catalog_id": "necklace_32",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_105",
+        "query_path": "Jewellery_Data/necklace/necklace_105.jpg",
+        "target_sku": "SKU-NECK-necklace_107",
+        "target_catalog_id": "necklace_107",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_126",
+        "query_path": "Jewellery_Data/necklace/necklace_126.jpg",
+        "target_sku": "SKU-NECK-necklace_128",
+        "target_catalog_id": "necklace_128",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_130",
+        "query_path": "Jewellery_Data/necklace/necklace_130.jpg",
+        "target_sku": "SKU-NECK-necklace_145",
+        "target_catalog_id": "necklace_145",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_133",
+        "query_path": "Jewellery_Data/necklace/necklace_133.jpg",
+        "target_sku": "SKU-NECK-necklace_141",
+        "target_catalog_id": "necklace_141",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_14",
+        "query_path": "Jewellery_Data/necklace/necklace_14.jpg",
+        "target_sku": "SKU-NECK-necklace_18",
+        "target_catalog_id": "necklace_18",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_15",
+        "query_path": "Jewellery_Data/necklace/necklace_15.jpg",
+        "target_sku": "SKU-NECK-necklace_16",
+        "target_catalog_id": "necklace_16",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_156",
+        "query_path": "Jewellery_Data/necklace/necklace_156.jpg",
+        "target_sku": "SKU-NECK-necklace_160",
+        "target_catalog_id": "necklace_160",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_196",
+        "query_path": "Jewellery_Data/necklace/necklace_196.jpg",
+        "target_sku": "SKU-NECK-necklace_197",
+        "target_catalog_id": "necklace_197",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      },
+      {
+        "query_id": "real_mv_q_neck_necklace_203",
+        "query_path": "Jewellery_Data/necklace/necklace_203.jpg",
+        "target_sku": "SKU-NECK-necklace_204",
+        "target_catalog_id": "necklace_204",
+        "category": "necklace",
+        "slice": "slice_a_real_multiview",
+        "description": "Real necklace multi-shot capture perceptual_multishot"
+      }
+    ],
+    "slice_b_worn_on_hand": [
+      {
+        "query_id": "worn_ring_063_real",
+        "query_path": "Jewellery_Data/ring/ring-downloaded.png",
+        "target_sku": "SKU-RING-ring_063",
+        "target_catalog_id": "ring_063",
+        "category": "ring",
+        "slice": "slice_b_worn_on_hand",
+        "description": "Real photograph of floral diamond cluster ring worn on finger"
+      },
+      {
+        "query_id": "worn_ring_032_composite",
+        "query_path": "data/evaluation/robustness_queries/synth_worn_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_b_worn_on_hand",
+        "description": "Ring composite on real skin hand background (Solitaire Diamond Ring)"
+      },
+      {
+        "query_id": "worn_ring_081_composite",
+        "query_path": "data/evaluation/robustness_queries/synth_worn_ring_081.jpg",
+        "target_sku": "SKU-RING-ring_081",
+        "target_catalog_id": "ring_081",
+        "category": "ring",
+        "slice": "slice_b_worn_on_hand",
+        "description": "Ring composite on real skin hand background (Yellow Gold Solitaire Ring)"
+      },
+      {
+        "query_id": "worn_ring_046_composite",
+        "query_path": "data/evaluation/robustness_queries/synth_worn_ring_046.jpg",
+        "target_sku": "SKU-RING-ring_046",
+        "target_catalog_id": "ring_046",
+        "category": "ring",
+        "slice": "slice_b_worn_on_hand",
+        "description": "Ring composite on real skin hand background (Oval Halo Diamond Ring)"
+      },
+      {
+        "query_id": "worn_ring_140_composite",
+        "query_path": "data/evaluation/robustness_queries/synth_worn_ring_140.jpg",
+        "target_sku": "SKU-RING-ring_140",
+        "target_catalog_id": "ring_140",
+        "category": "ring",
+        "slice": "slice_b_worn_on_hand",
+        "description": "Ring composite on real skin hand background (Princess Cut Pave Ring)"
+      }
+    ],
+    "slice_c_viewpoint_shifts": [
+      {
+        "query_id": "rot_-15_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-15_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -15 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-10_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-10_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-5_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-5_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_5_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_5_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_10_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_10_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_15_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_15_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 15 deg with boundary preservation"
+      },
+      {
+        "query_id": "zoom_85_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_85_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 85% scale"
+      },
+      {
+        "query_id": "zoom_70_ring_032",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_70_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 70% scale"
+      },
+      {
+        "query_id": "rot_-15_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-15_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -15 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-10_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-10_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-5_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-5_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_5_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_5_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_10_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_10_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_15_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_15_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 15 deg with boundary preservation"
+      },
+      {
+        "query_id": "zoom_85_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_85_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 85% scale"
+      },
+      {
+        "query_id": "zoom_70_ring_065",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_70_ring_065.jpg",
+        "target_sku": "SKU-RING-ring_065",
+        "target_catalog_id": "ring_065",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 70% scale"
+      },
+      {
+        "query_id": "rot_-15_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-15_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -15 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-10_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-10_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-5_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-5_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_5_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_5_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_10_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_10_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_15_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_15_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 15 deg with boundary preservation"
+      },
+      {
+        "query_id": "zoom_85_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_85_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 85% scale"
+      },
+      {
+        "query_id": "zoom_70_ring_155",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_70_ring_155.jpg",
+        "target_sku": "SKU-RING-ring_155",
+        "target_catalog_id": "ring_155",
+        "category": "ring",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 70% scale"
+      },
+      {
+        "query_id": "rot_-15_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-15_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -15 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-10_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-10_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_-5_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_-5_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation -5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_5_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_5_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 5 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_10_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_10_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 10 deg with boundary preservation"
+      },
+      {
+        "query_id": "rot_15_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_rot_15_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Rotation 15 deg with boundary preservation"
+      },
+      {
+        "query_id": "zoom_85_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_85_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 85% scale"
+      },
+      {
+        "query_id": "zoom_70_necklace_10",
+        "query_path": "data/evaluation/robustness_queries/geom_zoom_70_necklace_10.jpg",
+        "target_sku": "SKU-NECK-necklace_10",
+        "target_catalog_id": "necklace_10",
+        "category": "necklace",
+        "slice": "slice_c_viewpoint_shifts",
+        "description": "Center zoom crop 70% scale"
+      }
+    ],
+    "slice_d_image_corruptions": [
+      {
+        "query_id": "noise_s15_ring_032",
+        "query_path": "data/evaluation/robustness_queries/corrupt_noise_s15_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Gaussian sensor noise sigma=15"
+      },
+      {
+        "query_id": "jpeg_q35_ring_032",
+        "query_path": "data/evaluation/robustness_queries/corrupt_jpeg_q35_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Severe JPEG recompression Q=35"
+      },
+      {
+        "query_id": "blur_r18_ring_032",
+        "query_path": "data/evaluation/robustness_queries/corrupt_blur_r18_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Optical defocus Gaussian blur radius 1.8"
+      },
+      {
+        "query_id": "underexp_65_ring_032",
+        "query_path": "data/evaluation/robustness_queries/corrupt_underexp_65_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Underexposed illumination -35%"
+      },
+      {
+        "query_id": "wb_warm_ring_032",
+        "query_path": "data/evaluation/robustness_queries/corrupt_wb_warm_ring_032.jpg",
+        "target_sku": "SKU-RING-ring_032",
+        "target_catalog_id": "ring_032",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Warm halogen white-balance shift"
+      },
+      {
+        "query_id": "noise_s15_ring_081",
+        "query_path": "data/evaluation/robustness_queries/corrupt_noise_s15_ring_081.jpg",
+        "target_sku": "SKU-RING-ring_081",
+        "target_catalog_id": "ring_081",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Gaussian sensor noise sigma=15"
+      },
+      {
+        "query_id": "jpeg_q35_ring_081",
+        "query_path": "data/evaluation/robustness_queries/corrupt_jpeg_q35_ring_081.jpg",
+        "target_sku": "SKU-RING-ring_081",
+        "target_catalog_id": "ring_081",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Severe JPEG recompression Q=35"
+      },
+      {
+        "query_id": "blur_r18_ring_081",
+        "query_path": "data/evaluation/robustness_queries/corrupt_blur_r18_ring_081.jpg",
+        "target_sku": "SKU-RING-ring_081",
+        "target_catalog_id": "ring_081",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Optical defocus Gaussian blur radius 1.8"
+      },
+      {
+        "query_id": "underexp_65_ring_081",
+        "query_path": "data/evaluation/robustness_queries/corrupt_underexp_65_ring_081.jpg",
+        "target_sku": "SKU-RING-ring_081",
+        "target_catalog_id": "ring_081",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Underexposed illumination -35%"
+      },
+      {
+        "query_id": "wb_warm_ring_081",
+        "query_path": "data/evaluation/robustness_queries/corrupt_wb_warm_ring_081.jpg",
+        "target_sku": "SKU-RING-ring_081",
+        "target_catalog_id": "ring_081",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Warm halogen white-balance shift"
+      },
+      {
+        "query_id": "noise_s15_ring_171",
+        "query_path": "data/evaluation/robustness_queries/corrupt_noise_s15_ring_171.jpg",
+        "target_sku": "SKU-RING-ring_171",
+        "target_catalog_id": "ring_171",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Gaussian sensor noise sigma=15"
+      },
+      {
+        "query_id": "jpeg_q35_ring_171",
+        "query_path": "data/evaluation/robustness_queries/corrupt_jpeg_q35_ring_171.jpg",
+        "target_sku": "SKU-RING-ring_171",
+        "target_catalog_id": "ring_171",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Severe JPEG recompression Q=35"
+      },
+      {
+        "query_id": "blur_r18_ring_171",
+        "query_path": "data/evaluation/robustness_queries/corrupt_blur_r18_ring_171.jpg",
+        "target_sku": "SKU-RING-ring_171",
+        "target_catalog_id": "ring_171",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Optical defocus Gaussian blur radius 1.8"
+      },
+      {
+        "query_id": "underexp_65_ring_171",
+        "query_path": "data/evaluation/robustness_queries/corrupt_underexp_65_ring_171.jpg",
+        "target_sku": "SKU-RING-ring_171",
+        "target_catalog_id": "ring_171",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Underexposed illumination -35%"
+      },
+      {
+        "query_id": "wb_warm_ring_171",
+        "query_path": "data/evaluation/robustness_queries/corrupt_wb_warm_ring_171.jpg",
+        "target_sku": "SKU-RING-ring_171",
+        "target_catalog_id": "ring_171",
+        "category": "ring",
+        "slice": "slice_d_image_corruptions",
+        "description": "Warm halogen white-balance shift"
+      },
+      {
+        "query_id": "noise_s15_necklace_105",
+        "query_path": "data/evaluation/robustness_queries/corrupt_noise_s15_necklace_105.jpg",
+        "target_sku": "SKU-NECK-necklace_105",
+        "target_catalog_id": "necklace_105",
+        "category": "necklace",
+        "slice": "slice_d_image_corruptions",
+        "description": "Gaussian sensor noise sigma=15"
+      },
+      {
+        "query_id": "jpeg_q35_necklace_105",
+        "query_path": "data/evaluation/robustness_queries/corrupt_jpeg_q35_necklace_105.jpg",
+        "target_sku": "SKU-NECK-necklace_105",
+        "target_catalog_id": "necklace_105",
+        "category": "necklace",
+        "slice": "slice_d_image_corruptions",
+        "description": "Severe JPEG recompression Q=35"
+      },
+      {
+        "query_id": "blur_r18_necklace_105",
+        "query_path": "data/evaluation/robustness_queries/corrupt_blur_r18_necklace_105.jpg",
+        "target_sku": "SKU-NECK-necklace_105",
+        "target_catalog_id": "necklace_105",
+        "category": "necklace",
+        "slice": "slice_d_image_corruptions",
+        "description": "Optical defocus Gaussian blur radius 1.8"
+      },
+      {
+        "query_id": "underexp_65_necklace_105",
+        "query_path": "data/evaluation/robustness_queries/corrupt_underexp_65_necklace_105.jpg",
+        "target_sku": "SKU-NECK-necklace_105",
+        "target_catalog_id": "necklace_105",
+        "category": "necklace",
+        "slice": "slice_d_image_corruptions",
+        "description": "Underexposed illumination -35%"
+      },
+      {
+        "query_id": "wb_warm_necklace_105",
+        "query_path": "data/evaluation/robustness_queries/corrupt_wb_warm_necklace_105.jpg",
+        "target_sku": "SKU-NECK-necklace_105",
+        "target_catalog_id": "necklace_105",
+        "category": "necklace",
+        "slice": "slice_d_image_corruptions",
+        "description": "Warm halogen white-balance shift"
+      }
+    ],
+    "slice_e_hard_negatives": [
+      {
+        "query_id": "neg_ring_066",
+        "query_path": "Jewellery_Data/ring/ring_066.jpg",
+        "negative_target_id": "ring_100",
+        "category": "ring",
+        "reason": "Different stone count & prongs (35.9 FG diff)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different stone count & prongs (35.9 FG diff)"
+      },
+      {
+        "query_id": "neg_ring_058",
+        "query_path": "Jewellery_Data/ring/ring_058.jpg",
+        "negative_target_id": "ring_060",
+        "category": "ring",
+        "reason": "Different halo setting & prongs (32.0 FG diff)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different halo setting & prongs (32.0 FG diff)"
+      },
+      {
+        "query_id": "neg_ring_116",
+        "query_path": "Jewellery_Data/ring/ring_116.jpg",
+        "negative_target_id": "ring_187",
+        "category": "ring",
+        "reason": "Solitaire vs multi-stone pave (36.5 FG diff)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Solitaire vs multi-stone pave (36.5 FG diff)"
+      },
+      {
+        "query_id": "neg_ring_162",
+        "query_path": "Jewellery_Data/ring/ring_162.jpg",
+        "negative_target_id": "ring_176",
+        "category": "ring",
+        "reason": "Different shank metal profile (47.5 FG diff)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different shank metal profile (47.5 FG diff)"
+      },
+      {
+        "query_id": "neg_ring_089",
+        "query_path": "Jewellery_Data/ring/ring_089.jpg",
+        "negative_target_id": "ring_112",
+        "category": "ring",
+        "reason": "Different centre stone cut (37.7 FG diff)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different centre stone cut (37.7 FG diff)"
+      },
+      {
+        "query_id": "neg_ring_139",
+        "query_path": "Jewellery_Data/ring/ring_139.jpg",
+        "negative_target_id": "ring_147",
+        "category": "ring",
+        "reason": "Different prong geometry (36.3 FG diff)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different prong geometry (36.3 FG diff)"
+      },
+      {
+        "query_id": "neg_ring_073",
+        "query_path": "Jewellery_Data/ring/ring_073.jpg",
+        "negative_target_id": "ring_132",
+        "category": "ring",
+        "reason": "Different band thickness (26.8 FG diff)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different band thickness (26.8 FG diff)"
+      },
+      {
+        "query_id": "neg_ring_083",
+        "query_path": "Jewellery_Data/ring/ring_083.jpg",
+        "negative_target_id": "ring_187",
+        "category": "ring",
+        "reason": "Solitaire vs cluster pave ring (EXP-004 transitive error)",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Solitaire vs cluster pave ring (EXP-004 transitive error)"
+      },
+      {
+        "query_id": "neg_ring_065",
+        "query_path": "Jewellery_Data/ring/ring_065.jpg",
+        "negative_target_id": "ring_140",
+        "category": "ring",
+        "reason": "Similar silhouette, different stone arrangement",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Similar silhouette, different stone arrangement"
+      },
+      {
+        "query_id": "neg_ring_105",
+        "query_path": "Jewellery_Data/ring/ring_105.jpg",
+        "negative_target_id": "ring_154",
+        "category": "ring",
+        "reason": "Different centre stone shape",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different centre stone shape"
+      },
+      {
+        "query_id": "neg_ring_104",
+        "query_path": "Jewellery_Data/ring/ring_104.jpg",
+        "negative_target_id": "ring_189",
+        "category": "ring",
+        "reason": "Different prong layout",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different prong layout"
+      },
+      {
+        "query_id": "neg_ring_076",
+        "query_path": "Jewellery_Data/ring/ring_076.jpg",
+        "negative_target_id": "ring_129",
+        "category": "ring",
+        "reason": "Different metal finish and shank",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different metal finish and shank"
+      },
+      {
+        "query_id": "neg_ring_137",
+        "query_path": "Jewellery_Data/ring/ring_137.jpg",
+        "negative_target_id": "ring_153",
+        "category": "ring",
+        "reason": "Different halo stone count",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different halo stone count"
+      },
+      {
+        "query_id": "neg_ring_092",
+        "query_path": "Jewellery_Data/ring/ring_092.jpg",
+        "negative_target_id": "ring_167",
+        "category": "ring",
+        "reason": "Different cut facets",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different cut facets"
+      },
+      {
+        "query_id": "neg_ring_124",
+        "query_path": "Jewellery_Data/ring/ring_124.jpg",
+        "negative_target_id": "ring_180",
+        "category": "ring",
+        "reason": "Different crown height",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different crown height"
+      },
+      {
+        "query_id": "neg_necklace_10",
+        "query_path": "Jewellery_Data/necklace/necklace_10.jpg",
+        "negative_target_id": "necklace_32",
+        "category": "necklace",
+        "reason": "Similar drop shape, different stone arrangement",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Similar drop shape, different stone arrangement"
+      },
+      {
+        "query_id": "neg_necklace_105",
+        "query_path": "Jewellery_Data/necklace/necklace_105.jpg",
+        "negative_target_id": "necklace_109",
+        "category": "necklace",
+        "reason": "Similar pendant bail, different gem cluster",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Similar pendant bail, different gem cluster"
+      },
+      {
+        "query_id": "neg_necklace_107",
+        "query_path": "Jewellery_Data/necklace/necklace_107.jpg",
+        "negative_target_id": "necklace_109",
+        "category": "necklace",
+        "reason": "Different pendant proportion",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different pendant proportion"
+      },
+      {
+        "query_id": "neg_necklace_126",
+        "query_path": "Jewellery_Data/necklace/necklace_126.jpg",
+        "negative_target_id": "necklace_136",
+        "category": "necklace",
+        "reason": "Similar chain, different pendant motif",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Similar chain, different pendant motif"
+      },
+      {
+        "query_id": "neg_necklace_128",
+        "query_path": "Jewellery_Data/necklace/necklace_128.jpg",
+        "negative_target_id": "necklace_129",
+        "category": "necklace",
+        "reason": "Different chain link pattern",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different chain link pattern"
+      },
+      {
+        "query_id": "neg_necklace_1",
+        "query_path": "Jewellery_Data/necklace/necklace_1.jpg",
+        "negative_target_id": "necklace_2",
+        "category": "necklace",
+        "reason": "Different pendant stones",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different pendant stones"
+      },
+      {
+        "query_id": "neg_necklace_15",
+        "query_path": "Jewellery_Data/necklace/necklace_15.jpg",
+        "negative_target_id": "necklace_18",
+        "category": "necklace",
+        "reason": "Different chain thickness",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different chain thickness"
+      },
+      {
+        "query_id": "neg_necklace_45",
+        "query_path": "Jewellery_Data/necklace/necklace_45.jpg",
+        "negative_target_id": "necklace_48",
+        "category": "necklace",
+        "reason": "Different bail shape",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different bail shape"
+      },
+      {
+        "query_id": "neg_necklace_60",
+        "query_path": "Jewellery_Data/necklace/necklace_60.jpg",
+        "negative_target_id": "necklace_65",
+        "category": "necklace",
+        "reason": "Different gemstone cut",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different gemstone cut"
+      },
+      {
+        "query_id": "neg_necklace_70",
+        "query_path": "Jewellery_Data/necklace/necklace_70.jpg",
+        "negative_target_id": "necklace_75",
+        "category": "necklace",
+        "reason": "Different setting",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different setting"
+      },
+      {
+        "query_id": "neg_necklace_80",
+        "query_path": "Jewellery_Data/necklace/necklace_80.jpg",
+        "negative_target_id": "necklace_85",
+        "category": "necklace",
+        "reason": "Different pendant perimeter",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different pendant perimeter"
+      },
+      {
+        "query_id": "neg_necklace_91",
+        "query_path": "Jewellery_Data/necklace/necklace_91.jpg",
+        "negative_target_id": "necklace_95",
+        "category": "necklace",
+        "reason": "Different stone count",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different stone count"
+      },
+      {
+        "query_id": "neg_necklace_110",
+        "query_path": "Jewellery_Data/necklace/necklace_110.jpg",
+        "negative_target_id": "necklace_115",
+        "category": "necklace",
+        "reason": "Different chain length and links",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different chain length and links"
+      },
+      {
+        "query_id": "neg_necklace_151",
+        "query_path": "Jewellery_Data/necklace/necklace_151.jpg",
+        "negative_target_id": "necklace_155",
+        "category": "necklace",
+        "reason": "Different pendant cut",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different pendant cut"
+      },
+      {
+        "query_id": "neg_necklace_200",
+        "query_path": "Jewellery_Data/necklace/necklace_200.jpg",
+        "negative_target_id": "necklace_205",
+        "category": "necklace",
+        "reason": "Different metal tone",
+        "slice": "slice_e_hard_negatives",
+        "description": "Hard negative discrimination: Different metal tone"
+      }
+    ]
+  },
+  "total_positive_queries": 72,
+  "total_negative_pairs": 30
+}

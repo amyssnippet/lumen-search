@@ -1,0 +1,64 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "title": "Search Request Volume (QPS)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "targets": [
+        {
+          "expr": "sum(rate(jewellery_retrieval_requests_total[1m])) by (endpoint, status_code)",
+          "legendFormat": "{{endpoint}} ({{status_code}})"
+        }
+      ]
+    },
+    {
+      "title": "Search Error Rate (%)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "targets": [
+        {
+          "expr": "sum(rate(jewellery_retrieval_requests_total{status_code=~\"5..\"}[1m])) / sum(rate(jewellery_retrieval_requests_total[1m])) * 100",
+          "legendFormat": "5xx Error Rate %"
+        }
+      ]
+    },
+    {
+      "title": "Stage Latency p95 (Seconds)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(jewellery_retrieval_latency_seconds_bucket[1m])) by (le, stage))",
+          "legendFormat": "p95 {{stage}}"
+        }
+      ]
+    },
+    {
+      "title": "Qdrant Vector Database Operations & Errors",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "targets": [
+        {
+          "expr": "sum(rate(jewellery_qdrant_operations_total[1m])) by (operation, status)",
+          "legendFormat": "{{operation}} ({{status}})"
+        }
+      ]
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 38,
+  "tags": ["jewellery", "search", "production", "ph009"],
+  "templating": { "list": [] },
+  "time": { "from": "now-1h", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Search Service Health",
+  "version": 1
+}

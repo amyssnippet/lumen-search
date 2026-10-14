@@ -1,0 +1,145 @@
+version: "3.8"
+
+networks:
+  demo_network:
+    name: jewellery_demo_network
+    driver: bridge
+
+volumes:
+  demo_postgres_data:
+    name: jewellery_demo_postgres_data
+  demo_redis_data:
+    name: jewellery_demo_redis_data
+  demo_qdrant_data:
+    name: jewellery_demo_qdrant_data
+
+services:
+  # ----------------------------------------------------------------------------
+  # Relational Store (Isolated internal network, no host port publication)
+  # ----------------------------------------------------------------------------
+  demo_db:
+    image: postgres:16-alpine
+    container_name: jewellery_demo_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-jewellery_demo}
+      POSTGRES_USER: ${POSTGRES_USER:-demo_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-demo_secret_pass_2026}
+    volumes:
+      - demo_postgres_data:/var/lib/postgresql/data
+    networks:
+      - demo_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-demo_user} -d ${POSTGRES_DB:-jewellery_demo}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # ----------------------------------------------------------------------------
+  # Redis Distributed Cache & Rate Limiter (Isolated internal network)
+  # ----------------------------------------------------------------------------
+  demo_redis:
+    image: redis:7-alpine
+    container_name: jewellery_demo_redis
+    restart: unless-stopped
+    volumes:
+      - demo_redis_data:/data
+    networks:
+      - demo_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # ----------------------------------------------------------------------------
+  # Qdrant Vector Engine (Isolated internal network)
+  # ----------------------------------------------------------------------------
+  demo_qdrant:
+    image: qdrant/qdrant:v1.12.1
+    container_name: jewellery_demo_qdrant
+    restart: unless-stopped
+    volumes:
+      - demo_qdrant_data:/qdrant/storage
+    networks:
+      - demo_network
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/6333' 2>/dev/null || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # ----------------------------------------------------------------------------
+  # Backend API & Bootstrap Init (Internal port 8000)
+  # ----------------------------------------------------------------------------
+  demo_backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jewellery_demo_backend
+    restart: unless-stopped
+    depends_on:
+      demo_db:
+        condition: service_healthy
+      demo_redis:
+        condition: service_healthy
+      demo_qdrant:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-postgresql://demo_user:demo_secret_pass_2026@demo_db:5432/jewellery_demo}
+      REDIS_URL: ${REDIS_URL:-redis://demo_redis:6379/0}
+      QDRANT_HOST: ${QDRANT_HOST:-demo_qdrant}
+      QDRANT_PORT: ${QDRANT_PORT:-6333}
+      QDRANT_PRODUCTION_ALIAS: ${QDRANT_PRODUCTION_ALIAS:-jewellery_catalog_mobilenetv4_staging}
+      REQUIRE_AUTH: "true"
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-demo_secure_jwt_secret_key_2026_super_safe}
+      REQUIRE_REVERSE_PROXY: "true"
+      INTERNAL_PROXY_SECRET: ${INTERNAL_PROXY_SECRET:-demo_internal_edge_proxy_secret_2026_x87a}
+      DEMO_USER_EMAIL: ${DEMO_USER_EMAIL:-admin@jewellery.internal}
+      DEMO_USER_PASSWORD: ${DEMO_USER_PASSWORD:-dev_password_2026}
+    volumes:
+      - ./app:/app/app:ro
+      - ./engine:/app/engine:ro
+      - ./Jewellery_Data:/app/Jewellery_Data:ro
+      - ./data:/app/data
+      - ./scripts:/app/scripts:ro
+      - ./output:/app/output:ro
+    command: >
+      sh -c "python scripts/init_demo_stack.py && uvicorn app.main:app --host 0.0.0.0 --port 8000 --timeout-graceful-shutdown 15"
+    networks:
+      - demo_network
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f -H \"X-Proxy-Secret: $${INTERNAL_PROXY_SECRET:-demo_internal_edge_proxy_secret_2026_x87a}\" http://localhost:8000/health/live || exit 1"]
+      interval: 5s
+      timeout: 3s
+      start_period: 15s
+      retries: 5
+
+  # ----------------------------------------------------------------------------
+  # Next.js Web Frontend & BFF (Exposed on http://localhost:3000)
+  # ----------------------------------------------------------------------------
+  demo_web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: jewellery_demo_web
+    restart: unless-stopped
+    depends_on:
+      demo_backend:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    environment:
+      PORT: 3000
+      BACKEND_URL: ${BACKEND_URL:-http://demo_backend:8000}
+      INTERNAL_PROXY_SECRET: ${INTERNAL_PROXY_SECRET:-demo_internal_edge_proxy_secret_2026_x87a}
+      DEMO_USER_EMAIL: ${DEMO_USER_EMAIL:-admin@jewellery.internal}
+      DEMO_USER_PASSWORD: ${DEMO_USER_PASSWORD:-dev_password_2026}
+    networks:
+      - demo_network
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3000/"]
+      interval: 10s
+      timeout: 5s
+      start_period: 20s
+      retries: 5

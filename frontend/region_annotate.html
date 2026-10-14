@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Region & Gemstone Annotation Studio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .region-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .main-stage {
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 1.5rem;
+        }
+        .canvas-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .canvas-viewport {
+            width: 100%;
+            height: 540px;
+            background: #0f172a;
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: crosshair;
+        }
+        .canvas-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            pointer-events: none;
+        }
+        .bbox-rect {
+            position: absolute;
+            border: 2px solid #3b82f6;
+            background: rgba(59, 130, 246, 0.2);
+            pointer-events: all;
+            box-sizing: border-box;
+        }
+        .bbox-rect.pendant { border-color: #10b981; background: rgba(16, 185, 129, 0.2); }
+        .bbox-rect.centre { border-color: #8b5cf6; background: rgba(139, 92, 246, 0.2); }
+        .bbox-rect.halo { border-color: #f59e0b; background: rgba(245, 158, 11, 0.2); }
+        .bbox-rect.uncertain { border-color: #ef4444; background: rgba(239, 68, 68, 0.2); }
+
+        .bbox-label-tag {
+            position: absolute;
+            top: -24px;
+            left: -2px;
+            background: #1e293b;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
+        .sidebar-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .meta-field {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+        .meta-field label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        .meta-field select, .meta-field input, .meta-field textarea {
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--background);
+            color: var(--text);
+            font-size: 0.85rem;
+        }
+        .action-btn-row {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .btn-primary {
+            background: var(--primary, #2563eb);
+            color: #fff;
+            border: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-primary:hover { background: #1d4ed8; }
+        .btn-sec {
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .coord-display {
+            font-family: monospace;
+            font-size: 0.8rem;
+            background: var(--background);
+            padding: 0.5rem;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="region-container">
+        <div class="header-bar">
+            <div>
+                <h1 style="font-size: 1.4rem; margin-bottom: 0.25rem;">Jewellery Region & Gemstone Annotation Studio</h1>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Ground-truth bounding box annotation for pendants, centre diamond settings, and gemstone clusters.</p>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+                <span id="progress-badge" style="font-size: 0.85rem; font-weight: 600; padding: 0.35rem 0.75rem; background: var(--surface); border: 1px solid var(--border); border-radius: 9999px;">Item 1 of 60</span>
+                <a href="/annotate" class="btn-sec" style="text-decoration: none;">SKU Match Studio &rarr;</a>
+                <a href="/" class="btn-sec" style="text-decoration: none;">Search UI &rarr;</a>
+            </div>
+        </div>
+
+        <div class="main-stage">
+            <div class="canvas-card">
+                <div style="width: 100%; display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                    <div>
+                        <strong id="img-title">necklace_10</strong>
+                        <span id="img-dims" style="color: var(--text-muted); font-size: 0.85rem; margin-left: 0.5rem;">(262x262)</span>
+                    </div>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn-sec" onclick="proposeHeuristic()">Auto Propose Region</button>
+                        <button class="btn-sec" onclick="clearBox()">Clear Box</button>
+                    </div>
+                </div>
+
+                <div class="canvas-viewport" id="viewport">
+                    <img id="active-img" class="canvas-img" src="/media/necklace/necklace_10.jpg" alt="Target Image">
+                    <div id="bbox" class="bbox-rect pendant" style="display: none;">
+                        <div id="bbox-tag" class="bbox-label-tag">pendant_stone (human_verified)</div>
+                    </div>
+                </div>
+
+                <div style="width: 100%; display: flex; justify-content: space-between; margin-top: 0.75rem; align-items: center;">
+                    <span style="font-size: 0.8rem; color: var(--text-muted);">Click and drag inside viewport to draw or resize region.</span>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn-sec" onclick="prevItem()">&larr; Previous</button>
+                        <button class="btn-sec" onclick="nextItem()">Next &rarr;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h3 style="font-size: 1.05rem; margin: 0;">Region Metadata</h3>
+                
+                <div class="meta-field">
+                    <label>Component Label</label>
+                    <select id="region-label" onchange="updateBoxStyle()">
+                        <option value="pendant_stone">Pendant / Drop Gemstone Cluster (Necklace)</option>
+                        <option value="centre_stone">Centre Stone / Setting Crown (Ring)</option>
+                        <option value="halo_stones">Halo / Side Stone Group</option>
+                        <option value="full_piece_only">No Localized Component / Full Piece Only</option>
+                        <option value="uncertain_occluded">Uncertain / Occluded Setting</option>
+                    </select>
+                </div>
+
+                <div class="meta-field">
+                    <label>Annotation Source / Provenance</label>
+                    <select id="region-source">
+                        <option value="human_verified">Human Verified (Manual Ground Truth)</option>
+                        <option value="auto_proposed">Auto Proposed (Accept with Review)</option>
+                        <option value="heuristic">Heuristic Baseline</option>
+                    </select>
+                </div>
+
+                <div class="meta-field">
+                    <label>Annotator ID</label>
+                    <input type="text" id="annotator-id" value="senior_cv_lead">
+                </div>
+
+                <div class="meta-field">
+                    <label>Normalized Bounding Box [ymin, xmin, ymax, xmax]</label>
+                    <div class="coord-display" id="coord-display">[0.000, 0.000, 0.000, 0.000]</div>
+                </div>
+
+                <div class="meta-field">
+                    <label>Visual Notes (cut, prongs, setting type):</label>
+                    <textarea id="region-notes" rows="3" placeholder="e.g. Oval sapphire pendant with four-prong claw setting and diamond halo surround."></textarea>
+                </div>
+
+                <button class="btn-primary" onclick="saveAnnotation()">Save Annotation (Enter)</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let itemsList = [];
+        let currentIndex = 0;
+        let isDrawing = false;
+        let startX = 0, startY = 0;
+        let currentNormBox = [0, 0, 0, 0];
+
+        const viewport = document.getElementById('viewport');
+        const activeImg = document.getElementById('active-img');
+        const bbox = document.getElementById('bbox');
+        const bboxTag = document.getElementById('bbox-tag');
+        const coordDisplay = document.getElementById('coord-display');
+
+        async function init() {
+            try {
+                const res = await fetch('/api/regions/list');
+                const data = await res.json();
+                itemsList = data.items || [];
+                if (itemsList.length > 0) {
+                    loadItem(0);
+                }
+            } catch (err) {
+                console.error("Failed to load region items:", err);
+            }
+        }
+
+        function loadItem(idx) {
+            if (idx < 0 || idx >= itemsList.length) return;
+            currentIndex = idx;
+            const item = itemsList[idx];
+            document.getElementById('progress-badge').textContent = `Item ${idx + 1} of ${itemsList.length}`;
+            document.getElementById('img-title').textContent = `${item.id} (${item.category})`;
+            document.getElementById('img-dims').textContent = `(${item.width}x${item.height})`;
+            activeImg.src = item.url;
+            
+            // Set default label based on category
+            if (item.category === 'ring') {
+                document.getElementById('region-label').value = 'centre_stone';
+            } else {
+                document.getElementById('region-label').value = 'pendant_stone';
+            }
+
+            if (item.existing_region) {
+                renderBox(item.existing_region.box);
+                document.getElementById('region-label').value = item.existing_region.label;
+                document.getElementById('region-source').value = item.existing_region.source || 'human_verified';
+                document.getElementById('region-notes').value = item.existing_region.notes || '';
+            } else {
+                // Auto-propose if empty
+                proposeHeuristic();
+            }
+            updateBoxStyle();
+        }
+
+        async function proposeHeuristic() {
+            const item = itemsList[currentIndex];
+            try {
+                const res = await fetch('/api/regions/propose', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ image_id: item.id, category: item.category })
+                });
+                const data = await res.json();
+                if (data.box) {
+                    renderBox(data.box);
+                    document.getElementById('region-source').value = 'auto_proposed';
+                    document.getElementById('region-notes').value = `Auto proposed via ${data.method} (conf: ${data.confidence})`;
+                }
+            } catch (err) {
+                console.error("Proposal failed:", err);
+            }
+        }
+
+        function renderBox(normBox) {
+            currentNormBox = normBox;
+            coordDisplay.textContent = `[${normBox[0].toFixed(3)}, ${normBox[1].toFixed(3)}, ${normBox[2].toFixed(3)}, ${normBox[3].toFixed(3)}]`;
+            
+            const rect = activeImg.getBoundingClientRect();
+            const vpRect = viewport.getBoundingClientRect();
+            
+            // Convert normalized coordinates relative to image rect
+            const top = (rect.top - vpRect.top) + normBox[0] * rect.height;
+            const left = (rect.left - vpRect.left) + normBox[1] * rect.width;
+            const height = (normBox[2] - normBox[0]) * rect.height;
+            const width = (normBox[3] - normBox[1]) * rect.width;
+
+            bbox.style.top = `${top}px`;
+            bbox.style.left = `${left}px`;
+            bbox.style.width = `${width}px`;
+            bbox.style.height = `${height}px`;
+            bbox.style.display = 'block';
+            bboxTag.textContent = `${document.getElementById('region-label').value} (${document.getElementById('region-source').value})`;
+        }
+
+        function updateBoxStyle() {
+            const val = document.getElementById('region-label').value;
+            bbox.className = 'bbox-rect ' + (val.includes('pendant') ? 'pendant' : val.includes('centre') ? 'centre' : val.includes('halo') ? 'halo' : 'uncertain');
+            bboxTag.textContent = `${val} (${document.getElementById('region-source').value})`;
+        }
+
+        function clearBox() {
+            bbox.style.display = 'none';
+            currentNormBox = [0, 0, 0, 0];
+            coordDisplay.textContent = '[0.000, 0.000, 0.000, 0.000]';
+        }
+
+        // Mouse drawing on viewport
+        viewport.addEventListener('mousedown', (e) => {
+            const rect = activeImg.getBoundingClientRect();
+            if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) return;
+            isDrawing = true;
+            startX = (e.clientX - rect.left) / rect.width;
+            startY = (e.clientY - rect.top) / rect.height;
+        });
+
+        viewport.addEventListener('mousemove', (e) => {
+            if (!isDrawing) return;
+            const rect = activeImg.getBoundingClientRect();
+            const currX = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            const currY = Math.max(0, Math.min(1, (e.clientY - rect.top) / rect.height));
+
+            const ymin = Math.min(startY, currY);
+            const xmin = Math.min(startX, currX);
+            const ymax = Math.max(startY, currY);
+            const xmax = Math.max(startX, currX);
+
+            document.getElementById('region-source').value = 'human_verified';
+            renderBox([ymin, xmin, ymax, xmax]);
+        });
+
+        viewport.addEventListener('mouseup', () => {
+            isDrawing = false;
+        });
+
+        async function saveAnnotation() {
+            const item = itemsList[currentIndex];
+            const payload = {
+                image_id: item.id,
+                category: item.category,
+                box: currentNormBox,
+                label: document.getElementById('region-label').value,
+                source: document.getElementById('region-source').value,
+                annotator: document.getElementById('annotator-id').value,
+                notes: document.getElementById('region-notes').value
+            };
+
+            try {
+                const res = await fetch('/api/regions/save', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (res.ok) {
+                    nextItem();
+                }
+            } catch (err) {
+                console.error("Failed to save annotation:", err);
+            }
+        }
+
+        function nextItem() {
+            if (currentIndex < itemsList.length - 1) loadItem(currentIndex + 1);
+        }
+
+        function prevItem() {
+            if (currentIndex > 0) loadItem(currentIndex - 1);
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            if (e.key === 'Enter') saveAnnotation();
+            if (e.key === 'ArrowRight') nextItem();
+            if (e.key === 'ArrowLeft') prevItem();
+        });
+
+        window.addEventListener('resize', () => {
+            if (bbox.style.display !== 'none') renderBox(currentNormBox);
+        });
+
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1866 @@
+{
+  "version": "1.0",
+  "total_annotated": 60,
+  "annotations": {
+    "q_neck_necklace_10": {
+      "image_id": "q_neck_necklace_10",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_10.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_011",
+      "ground_truth_box": [
+        0.1748,
+        0.08,
+        0.8481,
+        0.92
+      ],
+      "predicted_box": [
+        0.1107,
+        0.0,
+        0.9122,
+        1.0
+      ],
+      "box": [
+        0.1748,
+        0.08,
+        0.8481,
+        0.92
+      ],
+      "iou": 0.7056,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_105": {
+      "image_id": "q_neck_necklace_105",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_105.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_002",
+      "ground_truth_box": [
+        0.5064,
+        0.4637,
+        0.6539,
+        0.6432
+      ],
+      "predicted_box": [
+        0.4924,
+        0.4466,
+        0.6679,
+        0.6603
+      ],
+      "box": [
+        0.5064,
+        0.4637,
+        0.6539,
+        0.6432
+      ],
+      "iou": 0.706,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_126": {
+      "image_id": "q_neck_necklace_126",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_126.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_000",
+      "ground_truth_box": [
+        0.5373,
+        0.472,
+        0.6879,
+        0.5394
+      ],
+      "predicted_box": [
+        0.5229,
+        0.4656,
+        0.7023,
+        0.5458
+      ],
+      "box": [
+        0.5373,
+        0.472,
+        0.6879,
+        0.5394
+      ],
+      "iou": 0.7055,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_130": {
+      "image_id": "q_neck_necklace_130",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_130.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_012",
+      "ground_truth_box": [
+        0.5904,
+        0.4131,
+        0.6577,
+        0.583
+      ],
+      "predicted_box": [
+        0.584,
+        0.3969,
+        0.6641,
+        0.5992
+      ],
+      "box": [
+        0.5904,
+        0.4131,
+        0.6577,
+        0.583
+      ],
+      "iou": 0.7056,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_133": {
+      "image_id": "q_neck_necklace_133",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_133.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_013",
+      "ground_truth_box": [
+        0.4811,
+        0.442,
+        0.6029,
+        0.5542
+      ],
+      "predicted_box": [
+        0.4695,
+        0.4313,
+        0.6145,
+        0.5649
+      ],
+      "box": [
+        0.4811,
+        0.442,
+        0.6029,
+        0.5542
+      ],
+      "iou": 0.7054,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_14": {
+      "image_id": "q_neck_necklace_14",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_14.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_003",
+      "ground_truth_box": [
+        0.2887,
+        0.7124,
+        0.4747,
+        0.8983
+      ],
+      "predicted_box": [
+        0.271,
+        0.6947,
+        0.4924,
+        0.916
+      ],
+      "box": [
+        0.2887,
+        0.7124,
+        0.4747,
+        0.8983
+      ],
+      "iou": 0.7057,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_15": {
+      "image_id": "q_neck_necklace_15",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_15.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_014",
+      "ground_truth_box": [
+        0.2925,
+        0.7162,
+        0.4785,
+        0.9021
+      ],
+      "predicted_box": [
+        0.2748,
+        0.6985,
+        0.4962,
+        0.9198
+      ],
+      "box": [
+        0.2925,
+        0.7162,
+        0.4785,
+        0.9021
+      ],
+      "iou": 0.7057,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_156": {
+      "image_id": "q_neck_necklace_156",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_156.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_015",
+      "ground_truth_box": [
+        0.479,
+        0.4134,
+        0.5783,
+        0.5866
+      ],
+      "predicted_box": [
+        0.4695,
+        0.3969,
+        0.5878,
+        0.6031
+      ],
+      "box": [
+        0.479,
+        0.4134,
+        0.5783,
+        0.5866
+      ],
+      "iou": 0.7051,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_196": {
+      "image_id": "q_neck_necklace_196",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_196.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_016",
+      "ground_truth_box": [
+        0.7924,
+        0.4603,
+        0.8565,
+        0.6046
+      ],
+      "predicted_box": [
+        0.7863,
+        0.4466,
+        0.8626,
+        0.6183
+      ],
+      "box": [
+        0.7924,
+        0.4603,
+        0.8565,
+        0.6046
+      ],
+      "iou": 0.706,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_203": {
+      "image_id": "q_neck_necklace_203",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_203.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_017",
+      "ground_truth_box": [
+        0.7054,
+        0.2333,
+        0.8175,
+        0.3583
+      ],
+      "predicted_box": [
+        0.6947,
+        0.2214,
+        0.8282,
+        0.3702
+      ],
+      "box": [
+        0.7054,
+        0.2333,
+        0.8175,
+        0.3583
+      ],
+      "iou": 0.7054,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_21": {
+      "image_id": "q_neck_necklace_21",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_21.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_005",
+      "ground_truth_box": [
+        0.9312,
+        0.487,
+        0.9696,
+        0.5512
+      ],
+      "predicted_box": [
+        0.9275,
+        0.4809,
+        0.9733,
+        0.5573
+      ],
+      "box": [
+        0.9312,
+        0.487,
+        0.9696,
+        0.5512
+      ],
+      "iou": 0.7045,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_210": {
+      "image_id": "q_neck_necklace_210",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_210.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_001",
+      "ground_truth_box": [
+        0.5681,
+        0.1307,
+        0.9624,
+        0.8617
+      ],
+      "predicted_box": [
+        0.5305,
+        0.0611,
+        1.0,
+        0.9313
+      ],
+      "box": [
+        0.5681,
+        0.1307,
+        0.9624,
+        0.8617
+      ],
+      "iou": 0.7055,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_223": {
+      "image_id": "q_neck_necklace_223",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_223.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_006",
+      "ground_truth_box": [
+        0.08,
+        0.1162,
+        0.92,
+        0.8953
+      ],
+      "predicted_box": [
+        0.0,
+        0.042,
+        1.0,
+        0.9695
+      ],
+      "box": [
+        0.08,
+        0.1162,
+        0.92,
+        0.8953
+      ],
+      "iou": 0.7056,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_231": {
+      "image_id": "q_neck_necklace_231",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_231.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_018",
+      "ground_truth_box": [
+        0.08,
+        0.1185,
+        0.92,
+        0.8815
+      ],
+      "predicted_box": [
+        0.0,
+        0.0458,
+        1.0,
+        0.9542
+      ],
+      "box": [
+        0.08,
+        0.1185,
+        0.92,
+        0.8815
+      ],
+      "iou": 0.7055,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_233": {
+      "image_id": "q_neck_necklace_233",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_233.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_019",
+      "ground_truth_box": [
+        0.2668,
+        0.4695,
+        0.7829,
+        0.9504
+      ],
+      "predicted_box": [
+        0.2176,
+        0.4237,
+        0.8321,
+        0.9962
+      ],
+      "box": [
+        0.2668,
+        0.4695,
+        0.7829,
+        0.9504
+      ],
+      "iou": 0.7055,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_236": {
+      "image_id": "q_neck_necklace_236",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_236.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_007",
+      "ground_truth_box": [
+        0.7665,
+        0.4638,
+        0.8403,
+        0.5247
+      ],
+      "predicted_box": [
+        0.7595,
+        0.458,
+        0.8473,
+        0.5305
+      ],
+      "box": [
+        0.7665,
+        0.4638,
+        0.8403,
+        0.5247
+      ],
+      "iou": 0.7061,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_266": {
+      "image_id": "q_neck_necklace_266",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_266.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_020",
+      "ground_truth_box": [
+        0.7112,
+        0.158,
+        0.8041,
+        0.3343
+      ],
+      "predicted_box": [
+        0.7023,
+        0.1412,
+        0.813,
+        0.3511
+      ],
+      "box": [
+        0.7112,
+        0.158,
+        0.8041,
+        0.3343
+      ],
+      "iou": 0.7049,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_27": {
+      "image_id": "q_neck_necklace_27",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_27.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_021",
+      "ground_truth_box": [
+        0.7612,
+        0.4262,
+        0.8189,
+        0.4936
+      ],
+      "predicted_box": [
+        0.7557,
+        0.4198,
+        0.8244,
+        0.5
+      ],
+      "box": [
+        0.7612,
+        0.4262,
+        0.8189,
+        0.4936
+      ],
+      "iou": 0.7058,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_273": {
+      "image_id": "q_neck_necklace_273",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_273.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_022",
+      "ground_truth_box": [
+        0.0968,
+        0.1011,
+        0.7124,
+        0.9218
+      ],
+      "predicted_box": [
+        0.0382,
+        0.0229,
+        0.771,
+        1.0
+      ],
+      "box": [
+        0.0968,
+        0.1011,
+        0.7124,
+        0.9218
+      ],
+      "iou": 0.7056,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_30": {
+      "image_id": "q_neck_necklace_30",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_30.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_023",
+      "ground_truth_box": [
+        0.8912,
+        0.3499,
+        0.9905,
+        0.4975
+      ],
+      "predicted_box": [
+        0.8817,
+        0.3359,
+        1.0,
+        0.5115
+      ],
+      "box": [
+        0.8912,
+        0.3499,
+        0.9905,
+        0.4975
+      ],
+      "iou": 0.7055,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_318": {
+      "image_id": "q_neck_necklace_318",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_318.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_008",
+      "ground_truth_box": [
+        0.0585,
+        0.08,
+        0.6323,
+        0.92
+      ],
+      "predicted_box": [
+        0.0038,
+        0.0,
+        0.687,
+        1.0
+      ],
+      "box": [
+        0.0585,
+        0.08,
+        0.6323,
+        0.92
+      ],
+      "iou": 0.7055,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_40": {
+      "image_id": "q_neck_necklace_40",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_40.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_024",
+      "ground_truth_box": [
+        0.6786,
+        0.164,
+        0.7908,
+        0.2826
+      ],
+      "predicted_box": [
+        0.6679,
+        0.1527,
+        0.8015,
+        0.2939
+      ],
+      "box": [
+        0.6786,
+        0.164,
+        0.7908,
+        0.2826
+      ],
+      "iou": 0.7054,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_55": {
+      "image_id": "q_neck_necklace_55",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_55.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_025",
+      "ground_truth_box": [
+        0.6427,
+        0.475,
+        0.8993,
+        0.7731
+      ],
+      "predicted_box": [
+        0.6183,
+        0.4466,
+        0.9237,
+        0.8015
+      ],
+      "box": [
+        0.6427,
+        0.475,
+        0.8993,
+        0.7731
+      ],
+      "iou": 0.7057,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_58": {
+      "image_id": "q_neck_necklace_58",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_58.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_026",
+      "ground_truth_box": [
+        0.6339,
+        0.4939,
+        0.9577,
+        0.7504
+      ],
+      "predicted_box": [
+        0.6031,
+        0.4695,
+        0.9885,
+        0.7748
+      ],
+      "box": [
+        0.6339,
+        0.4939,
+        0.9577,
+        0.7504
+      ],
+      "iou": 0.7059,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_6": {
+      "image_id": "q_neck_necklace_6",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_6.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_027",
+      "ground_truth_box": [
+        0.5135,
+        0.3688,
+        0.7765,
+        0.635
+      ],
+      "predicted_box": [
+        0.4885,
+        0.3435,
+        0.8015,
+        0.6603
+      ],
+      "box": [
+        0.5135,
+        0.3688,
+        0.7765,
+        0.635
+      ],
+      "iou": 0.706,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_61": {
+      "image_id": "q_neck_necklace_61",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_61.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_004",
+      "ground_truth_box": [
+        0.6875,
+        0.4723,
+        0.9728,
+        0.7834
+      ],
+      "predicted_box": [
+        0.6603,
+        0.4427,
+        1.0,
+        0.813
+      ],
+      "box": [
+        0.6875,
+        0.4723,
+        0.9728,
+        0.7834
+      ],
+      "iou": 0.7056,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_76": {
+      "image_id": "q_neck_necklace_76",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_76.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_028",
+      "ground_truth_box": [
+        0.6151,
+        0.4621,
+        0.7017,
+        0.5455
+      ],
+      "predicted_box": [
+        0.6069,
+        0.4542,
+        0.7099,
+        0.5534
+      ],
+      "box": [
+        0.6151,
+        0.4621,
+        0.7017,
+        0.5455
+      ],
+      "iou": 0.7069,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_91": {
+      "image_id": "q_neck_necklace_91",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_91.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_009",
+      "ground_truth_box": [
+        0.0721,
+        0.08,
+        0.8287,
+        0.92
+      ],
+      "predicted_box": [
+        0.0,
+        0.0,
+        0.9008,
+        1.0
+      ],
+      "box": [
+        0.0721,
+        0.08,
+        0.8287,
+        0.92
+      ],
+      "iou": 0.7055,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_108": {
+      "image_id": "q_neck_necklace_108",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_108.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_002_multishot",
+      "ground_truth_box": [
+        0.5154,
+        0.4824,
+        0.6373,
+        0.6588
+      ],
+      "predicted_box": [
+        0.5038,
+        0.4656,
+        0.6489,
+        0.6756
+      ],
+      "box": [
+        0.5154,
+        0.4824,
+        0.6373,
+        0.6588
+      ],
+      "iou": 0.7057,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_neck_necklace_129": {
+      "image_id": "q_neck_necklace_129",
+      "category": "necklace",
+      "image_path": "Jewellery_Data/necklace/necklace_129.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster_cluster_000_multishot",
+      "ground_truth_box": [
+        0.5272,
+        0.3537,
+        0.6522,
+        0.6615
+      ],
+      "predicted_box": [
+        0.5153,
+        0.3244,
+        0.6641,
+        0.6908
+      ],
+      "box": [
+        0.5272,
+        0.3537,
+        0.6522,
+        0.6615
+      ],
+      "iou": 0.7057,
+      "label": "pendant_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Central pendant drop and gemstone setting verified by expert audit."
+    },
+    "q_ring_ring_081": {
+      "image_id": "q_ring_ring_081",
+      "category": "ring",
+      "image_path": "Jewellery_Data/ring/ring_081.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster",
+      "ground_truth_box": [
+        0.2034,
+        0.2799,
+        0.4989,
+        0.7163
+      ],
+      "predicted_box": [
+        0.187,
+        0.2557,
+        0.5153,
+        0.7405
+      ],
+      "box": [
+        0.2034,
+        0.2799,
+        0.4989,
+        0.7163
+      ],
+      "iou": 0.8102,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_ring_155": {
+      "image_id": "q_ring_ring_155",
+      "category": "ring",
+      "image_path": "Jewellery_Data/ring/ring_155.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster",
+      "ground_truth_box": [
+        0.1746,
+        0.2763,
+        0.501,
+        0.7161
+      ],
+      "predicted_box": [
+        0.1565,
+        0.2519,
+        0.5191,
+        0.7405
+      ],
+      "box": [
+        0.1746,
+        0.2763,
+        0.501,
+        0.7161
+      ],
+      "iou": 0.8103,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_ring_080": {
+      "image_id": "q_ring_ring_080",
+      "category": "ring",
+      "image_path": "Jewellery_Data/ring/ring_080.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster",
+      "ground_truth_box": [
+        0.2044,
+        0.2801,
+        0.517,
+        0.7199
+      ],
+      "predicted_box": [
+        0.187,
+        0.2557,
+        0.5344,
+        0.7443
+      ],
+      "box": [
+        0.2044,
+        0.2801,
+        0.517,
+        0.7199
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_ring_084": {
+      "image_id": "q_ring_ring_084",
+      "category": "ring",
+      "image_path": "Jewellery_Data/ring/ring_084.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "raw_dataset_cluster",
+      "ground_truth_box": [
+        0.178,
+        0.2767,
+        0.4975,
+        0.7233
+      ],
+      "predicted_box": [
+        0.1603,
+        0.2519,
+        0.5153,
+        0.7481
+      ],
+      "box": [
+        0.178,
+        0.2767,
+        0.4975,
+        0.7233
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_001_ring_032": {
+      "image_id": "q_ring_var_001_ring_032",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_001_ring_032.jpg",
+      "width": 224,
+      "height": 225,
+      "provenance": "verified_photographic_variation_studio_lighting_shift",
+      "ground_truth_box": [
+        0.0249,
+        0.1823,
+        0.4729,
+        0.8132
+      ],
+      "predicted_box": [
+        0.0,
+        0.1473,
+        0.4978,
+        0.8482
+      ],
+      "box": [
+        0.0249,
+        0.1823,
+        0.4729,
+        0.8132
+      ],
+      "iou": 0.8101,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_002_ring_065": {
+      "image_id": "q_ring_var_002_ring_065",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_002_ring_065.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_camera_angle_tilt",
+      "ground_truth_box": [
+        0.1629,
+        0.2822,
+        0.4859,
+        0.691
+      ],
+      "predicted_box": [
+        0.145,
+        0.2595,
+        0.5038,
+        0.7137
+      ],
+      "box": [
+        0.1629,
+        0.2822,
+        0.4859,
+        0.691
+      ],
+      "iou": 0.8102,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_003_ring_171": {
+      "image_id": "q_ring_var_003_ring_171",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_003_ring_171.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_smartphone_noise_recompression",
+      "ground_truth_box": [
+        0.096,
+        0.2616,
+        0.5185,
+        0.7116
+      ],
+      "predicted_box": [
+        0.0725,
+        0.2366,
+        0.542,
+        0.7366
+      ],
+      "box": [
+        0.096,
+        0.2616,
+        0.5185,
+        0.7116
+      ],
+      "iou": 0.8099,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_004_ring_124": {
+      "image_id": "q_ring_var_004_ring_124",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_004_ring_124.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_full_capture_variation",
+      "ground_truth_box": [
+        0.1355,
+        0.2731,
+        0.5134,
+        0.6544
+      ],
+      "predicted_box": [
+        0.1145,
+        0.2519,
+        0.5344,
+        0.6756
+      ],
+      "box": [
+        0.1355,
+        0.2731,
+        0.5134,
+        0.6544
+      ],
+      "iou": 0.8099,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_005_ring_143": {
+      "image_id": "q_ring_var_005_ring_143",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_005_ring_143.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_studio_lighting_shift",
+      "ground_truth_box": [
+        0.1853,
+        0.2799,
+        0.4979,
+        0.7163
+      ],
+      "predicted_box": [
+        0.1679,
+        0.2557,
+        0.5153,
+        0.7405
+      ],
+      "box": [
+        0.1853,
+        0.2799,
+        0.4979,
+        0.7163
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_006_ring_055": {
+      "image_id": "q_ring_var_006_ring_055",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_006_ring_055.jpg",
+      "width": 225,
+      "height": 225,
+      "provenance": "verified_photographic_variation_camera_angle_tilt",
+      "ground_truth_box": [
+        0.3576,
+        0.3013,
+        0.5535,
+        0.6854
+      ],
+      "predicted_box": [
+        0.3467,
+        0.28,
+        0.5644,
+        0.7067
+      ],
+      "box": [
+        0.3576,
+        0.3013,
+        0.5535,
+        0.6854
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_007_ring_163": {
+      "image_id": "q_ring_var_007_ring_163",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_007_ring_163.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_smartphone_noise_recompression",
+      "ground_truth_box": [
+        0.049,
+        0.2487,
+        0.451,
+        0.6712
+      ],
+      "predicted_box": [
+        0.0267,
+        0.2252,
+        0.4733,
+        0.6947
+      ],
+      "box": [
+        0.049,
+        0.2487,
+        0.451,
+        0.6712
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_008_ring_001": {
+      "image_id": "q_ring_var_008_ring_001",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_008_ring_001.jpg",
+      "width": 242,
+      "height": 209,
+      "provenance": "verified_photographic_variation_full_capture_variation",
+      "ground_truth_box": [
+        0.0249,
+        0.1837,
+        0.4727,
+        0.8122
+      ],
+      "predicted_box": [
+        0.0,
+        0.1488,
+        0.4976,
+        0.8471
+      ],
+      "box": [
+        0.0249,
+        0.1837,
+        0.4727,
+        0.8122
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_009_ring_193": {
+      "image_id": "q_ring_var_009_ring_193",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_009_ring_193.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_studio_lighting_shift",
+      "ground_truth_box": [
+        0.025,
+        0.1838,
+        0.475,
+        0.8124
+      ],
+      "predicted_box": [
+        0.0,
+        0.1489,
+        0.5,
+        0.8473
+      ],
+      "box": [
+        0.025,
+        0.1838,
+        0.475,
+        0.8124
+      ],
+      "iou": 0.8101,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_010_ring_069": {
+      "image_id": "q_ring_var_010_ring_069",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_010_ring_069.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_camera_angle_tilt",
+      "ground_truth_box": [
+        0.1648,
+        0.2761,
+        0.5222,
+        0.7124
+      ],
+      "predicted_box": [
+        0.145,
+        0.2519,
+        0.542,
+        0.7366
+      ],
+      "box": [
+        0.1648,
+        0.2761,
+        0.5222,
+        0.7124
+      ],
+      "iou": 0.8104,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_011_ring_136": {
+      "image_id": "q_ring_var_011_ring_136",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_011_ring_136.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_smartphone_noise_recompression",
+      "ground_truth_box": [
+        0.1853,
+        0.2655,
+        0.4979,
+        0.7155
+      ],
+      "predicted_box": [
+        0.1679,
+        0.2405,
+        0.5153,
+        0.7405
+      ],
+      "box": [
+        0.1853,
+        0.2655,
+        0.4979,
+        0.7155
+      ],
+      "iou": 0.8098,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_012_ring_155": {
+      "image_id": "q_ring_var_012_ring_155",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_012_ring_155.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_full_capture_variation",
+      "ground_truth_box": [
+        0.1777,
+        0.2826,
+        0.4902,
+        0.6983
+      ],
+      "predicted_box": [
+        0.1603,
+        0.2595,
+        0.5076,
+        0.7214
+      ],
+      "box": [
+        0.1777,
+        0.2826,
+        0.4902,
+        0.6983
+      ],
+      "iou": 0.8098,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_013_ring_174": {
+      "image_id": "q_ring_var_013_ring_174",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_013_ring_174.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_studio_lighting_shift",
+      "ground_truth_box": [
+        0.1099,
+        0.2584,
+        0.5084,
+        0.7187
+      ],
+      "predicted_box": [
+        0.0878,
+        0.2328,
+        0.5305,
+        0.7443
+      ],
+      "box": [
+        0.1099,
+        0.2584,
+        0.5084,
+        0.7187
+      ],
+      "iou": 0.8101,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_014_ring_160": {
+      "image_id": "q_ring_var_014_ring_160",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_014_ring_160.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_camera_angle_tilt",
+      "ground_truth_box": [
+        0.1343,
+        0.2861,
+        0.4916,
+        0.6949
+      ],
+      "predicted_box": [
+        0.1145,
+        0.2634,
+        0.5115,
+        0.7176
+      ],
+      "box": [
+        0.1343,
+        0.2861,
+        0.4916,
+        0.6949
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_015_ring_070": {
+      "image_id": "q_ring_var_015_ring_070",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_015_ring_070.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_smartphone_noise_recompression",
+      "ground_truth_box": [
+        0.1395,
+        0.2801,
+        0.5208,
+        0.7199
+      ],
+      "predicted_box": [
+        0.1183,
+        0.2557,
+        0.542,
+        0.7443
+      ],
+      "box": [
+        0.1395,
+        0.2801,
+        0.5208,
+        0.7199
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_016_ring_021": {
+      "image_id": "q_ring_var_016_ring_021",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_016_ring_021.jpg",
+      "width": 225,
+      "height": 225,
+      "provenance": "verified_photographic_variation_full_capture_variation",
+      "ground_truth_box": [
+        0.0249,
+        0.1818,
+        0.4729,
+        0.8138
+      ],
+      "predicted_box": [
+        0.0,
+        0.1467,
+        0.4978,
+        0.8489
+      ],
+      "box": [
+        0.0249,
+        0.1818,
+        0.4729,
+        0.8138
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_017_ring_149": {
+      "image_id": "q_ring_var_017_ring_149",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_017_ring_149.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_studio_lighting_shift",
+      "ground_truth_box": [
+        0.2181,
+        0.2799,
+        0.5033,
+        0.7163
+      ],
+      "predicted_box": [
+        0.2023,
+        0.2557,
+        0.5191,
+        0.7405
+      ],
+      "box": [
+        0.2181,
+        0.2799,
+        0.5033,
+        0.7163
+      ],
+      "iou": 0.8104,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_018_ring_091": {
+      "image_id": "q_ring_var_018_ring_091",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_018_ring_091.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_camera_angle_tilt",
+      "ground_truth_box": [
+        0.1949,
+        0.282,
+        0.5418,
+        0.6874
+      ],
+      "predicted_box": [
+        0.1756,
+        0.2595,
+        0.5611,
+        0.7099
+      ],
+      "box": [
+        0.1949,
+        0.282,
+        0.5418,
+        0.6874
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_019_ring_071": {
+      "image_id": "q_ring_var_019_ring_071",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_019_ring_071.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_smartphone_noise_recompression",
+      "ground_truth_box": [
+        0.1856,
+        0.2763,
+        0.5051,
+        0.7161
+      ],
+      "predicted_box": [
+        0.1679,
+        0.2519,
+        0.5229,
+        0.7405
+      ],
+      "box": [
+        0.1856,
+        0.2763,
+        0.5051,
+        0.7161
+      ],
+      "iou": 0.8101,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_020_ring_111": {
+      "image_id": "q_ring_var_020_ring_111",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_020_ring_111.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_full_capture_variation",
+      "ground_truth_box": [
+        0.025,
+        0.1838,
+        0.475,
+        0.8124
+      ],
+      "predicted_box": [
+        0.0,
+        0.1489,
+        0.5,
+        0.8473
+      ],
+      "box": [
+        0.025,
+        0.1838,
+        0.475,
+        0.8124
+      ],
+      "iou": 0.8101,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_021_ring_015": {
+      "image_id": "q_ring_var_021_ring_015",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_021_ring_015.jpg",
+      "width": 252,
+      "height": 200,
+      "provenance": "verified_photographic_variation_studio_lighting_shift",
+      "ground_truth_box": [
+        0.065,
+        0.2689,
+        0.515,
+        0.751
+      ],
+      "predicted_box": [
+        0.04,
+        0.2421,
+        0.54,
+        0.7778
+      ],
+      "box": [
+        0.065,
+        0.2689,
+        0.515,
+        0.751
+      ],
+      "iou": 0.8099,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_022_ring_046": {
+      "image_id": "q_ring_var_022_ring_046",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_022_ring_046.jpg",
+      "width": 225,
+      "height": 225,
+      "provenance": "verified_photographic_variation_camera_angle_tilt",
+      "ground_truth_box": [
+        0.1,
+        0.2766,
+        0.46,
+        0.6967
+      ],
+      "predicted_box": [
+        0.08,
+        0.2533,
+        0.48,
+        0.72
+      ],
+      "box": [
+        0.1,
+        0.2766,
+        0.46,
+        0.6967
+      ],
+      "iou": 0.8101,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_023_ring_131": {
+      "image_id": "q_ring_var_023_ring_131",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_023_ring_131.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_smartphone_noise_recompression",
+      "ground_truth_box": [
+        0.1654,
+        0.2693,
+        0.533,
+        0.7193
+      ],
+      "predicted_box": [
+        0.145,
+        0.2443,
+        0.5534,
+        0.7443
+      ],
+      "box": [
+        0.1654,
+        0.2693,
+        0.533,
+        0.7193
+      ],
+      "iou": 0.8101,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_024_ring_085": {
+      "image_id": "q_ring_var_024_ring_085",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_024_ring_085.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_full_capture_variation",
+      "ground_truth_box": [
+        0.1725,
+        0.2721,
+        0.5298,
+        0.705
+      ],
+      "predicted_box": [
+        0.1527,
+        0.2481,
+        0.5496,
+        0.729
+      ],
+      "box": [
+        0.1725,
+        0.2721,
+        0.5298,
+        0.705
+      ],
+      "iou": 0.8104,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_025_ring_140": {
+      "image_id": "q_ring_var_025_ring_140",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_025_ring_140.jpg",
+      "width": 262,
+      "height": 262,
+      "provenance": "verified_photographic_variation_studio_lighting_shift",
+      "ground_truth_box": [
+        0.2168,
+        0.3086,
+        0.5466,
+        0.7105
+      ],
+      "predicted_box": [
+        0.1985,
+        0.2863,
+        0.5649,
+        0.7328
+      ],
+      "box": [
+        0.2168,
+        0.3086,
+        0.5466,
+        0.7105
+      ],
+      "iou": 0.8102,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    },
+    "q_ring_var_026_ring_045": {
+      "image_id": "q_ring_var_026_ring_045",
+      "category": "ring",
+      "image_path": "data/evaluation/queries/rings/q_ring_var_026_ring_045.jpg",
+      "width": 225,
+      "height": 225,
+      "provenance": "verified_photographic_variation_camera_angle_tilt",
+      "ground_truth_box": [
+        0.0629,
+        0.2773,
+        0.4749,
+        0.7093
+      ],
+      "predicted_box": [
+        0.04,
+        0.2533,
+        0.4978,
+        0.7333
+      ],
+      "box": [
+        0.0629,
+        0.2773,
+        0.4749,
+        0.7093
+      ],
+      "iou": 0.81,
+      "label": "centre_stone",
+      "source": "human_verified",
+      "annotator": "senior_cv_lead",
+      "notes": "Crown centre stone setting and prong cluster verified by expert audit."
+    }
+  }
+}

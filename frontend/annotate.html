@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery SKU Ground-Truth Annotation Studio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .annotate-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .stats-badge-group {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .stat-pill {
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: var(--surface);
+            border: 1px solid var(--border);
+        }
+        .stat-pill.same { background: #dcfce7; color: #166534; border-color: #86efac; }
+        .stat-pill.diff { background: #fee2e2; color: #991b1b; border-color: #fca5a5; }
+        .stat-pill.uncertain { background: #fef3c7; color: #92400e; border-color: #fde68a; }
+        .stat-pill.insufficient { background: #f3f4f6; color: #374151; border-color: #d1d5db; }
+
+        .comparison-stage {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .item-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            position: relative;
+        }
+        .item-card-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .zoom-viewport {
+            width: 100%;
+            height: 480px;
+            background: #0f172a;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            cursor: crosshair;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .zoom-image {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.05s ease-out;
+            transform-origin: center center;
+            user-select: none;
+            pointer-events: none;
+        }
+        .zoom-overlay-info {
+            position: absolute;
+            bottom: 8px;
+            left: 8px;
+            background: rgba(15, 23, 42, 0.75);
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            pointer-events: none;
+        }
+        .zoom-crosshair {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            display: none;
+        }
+
+        .annotation-panel {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .verdict-actions {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+        .verdict-btn {
+            padding: 1rem 0.75rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            align-items: center;
+            transition: all 0.15s ease;
+        }
+        .verdict-btn span.kbd {
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(0,0,0,0.1);
+            font-family: monospace;
+        }
+        .verdict-btn.btn-same {
+            background: #dcfce7;
+            color: #15803d;
+            border-color: #86efac;
+        }
+        .verdict-btn.btn-same:hover { background: #bbf7d0; }
+        .verdict-btn.btn-diff {
+            background: #fee2e2;
+            color: #b91c1c;
+            border-color: #fca5a5;
+        }
+        .verdict-btn.btn-diff:hover { background: #fecaca; }
+        .verdict-btn.btn-uncertain {
+            background: #fef3c7;
+            color: #b45309;
+            border-color: #fde68a;
+        }
+        .verdict-btn.btn-uncertain:hover { background: #fde68a; }
+        .verdict-btn.btn-insufficient {
+            background: #f3f4f6;
+            color: #4b5563;
+            border-color: #d1d5db;
+        }
+        .verdict-btn.btn-insufficient:hover { background: #e5e7eb; }
+
+        .meta-form {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+        .form-group label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+        .form-group select, .form-group input, .form-group textarea {
+            padding: 0.5rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            background: var(--background);
+            color: var(--text);
+        }
+        .explanation-row {
+            grid-column: span 4;
+        }
+
+        .controls-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-group {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .btn-secondary {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: var(--surface);
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .zoom-level-badge {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="annotate-container">
+        <div class="header-bar">
+            <div>
+                <h1 style="font-size: 1.5rem; margin-bottom: 0.25rem;">Jewellery SKU Ground-Truth Annotation Studio</h1>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Synchronized micro-inspection of centre stones, prongs, pavé, shank geometry, chains, and settings.</p>
+            </div>
+            <div class="stats-badge-group">
+                <span class="stat-pill" id="stat-total">Total: 0</span>
+                <span class="stat-pill same" id="stat-same">Same SKU: 0</span>
+                <span class="stat-pill diff" id="stat-diff">Diff SKU: 0</span>
+                <span class="stat-pill uncertain" id="stat-uncertain">Uncertain: 0</span>
+                <span class="stat-pill insufficient" id="stat-insufficient">Insufficient: 0</span>
+                <a href="/" class="btn-secondary" style="text-decoration: none;">&larr; Search Engine</a>
+            </div>
+        </div>
+
+        <div class="controls-toolbar" style="margin-bottom: 1rem;">
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <label style="font-size: 0.85rem; font-weight: 600;">Category Filter:
+                    <select id="filter-category" onchange="loadPairs(true)">
+                        <option value="">All Categories</option>
+                        <option value="ring">Rings Only</option>
+                        <option value="necklace">Necklaces Only</option>
+                    </select>
+                </label>
+                <label style="font-size: 0.85rem; font-weight: 600;">Status:
+                    <select id="filter-status" onchange="loadPairs(true)">
+                        <option value="pending">Pending Review</option>
+                        <option value="annotated">Annotated</option>
+                        <option value="all">All Pairs</option>
+                    </select>
+                </label>
+                <label style="font-size: 0.85rem; display: flex; align-items: center; gap: 0.35rem; cursor: pointer;">
+                    <input type="checkbox" id="sync-zoom-toggle" checked>
+                    <strong>Synchronized Zoom/Pan</strong>
+                </label>
+            </div>
+            <div class="nav-group">
+                <span class="zoom-level-badge" id="zoom-indicator">Zoom: 1.0x (Wheel to Zoom)</span>
+                <button class="btn-secondary" onclick="resetZoom()">Reset Zoom</button>
+                <button class="btn-secondary" onclick="prevPair()">&larr; Previous</button>
+                <button class="btn-secondary" onclick="nextPair()">Next &rarr;</button>
+            </div>
+        </div>
+
+        <!-- Side-by-Side Comparison Stage -->
+        <div class="comparison-stage">
+            <div class="item-card" id="query-card">
+                <div class="item-card-header">
+                    <span id="query-header">Query: ring_081</span>
+                    <span id="query-meta-header">262x262 | JPEG</span>
+                </div>
+                <div class="zoom-viewport" id="viewport-left">
+                    <img id="img-left" class="zoom-image" src="" alt="Query Image">
+                    <div class="zoom-overlay-info" id="left-info">Query Image</div>
+                    <div class="zoom-crosshair" id="crosshair-left"></div>
+                </div>
+            </div>
+
+            <div class="item-card" id="candidate-card">
+                <div class="item-card-header">
+                    <span id="candidate-header">Candidate: ring_108</span>
+                    <span id="candidate-meta-header">Sim: DINOv2=0.986, DINOv3=0.995</span>
+                </div>
+                <div class="zoom-viewport" id="viewport-right">
+                    <img id="img-right" class="zoom-image" src="" alt="Candidate Image">
+                    <div class="zoom-overlay-info" id="right-info">Catalog Candidate</div>
+                    <div class="zoom-crosshair" id="crosshair-right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Annotation Verdict Panel -->
+        <div class="annotation-panel">
+            <div class="verdict-actions">
+                <button class="verdict-btn btn-same" onclick="submitVerdict('confirmed_same_sku')">
+                    Confirmed Same Physical SKU
+                    <span class="kbd">Key: 1</span>
+                </button>
+                <button class="verdict-btn btn-diff" onclick="submitVerdict('confirmed_diff_sku')">
+                    Confirmed Different SKU (Hard Negative)
+                    <span class="kbd">Key: 2</span>
+                </button>
+                <button class="verdict-btn btn-uncertain" onclick="submitVerdict('identity_uncertain')">
+                    Identity Uncertain
+                    <span class="kbd">Key: 3</span>
+                </button>
+                <button class="verdict-btn btn-insufficient" onclick="submitVerdict('insufficient_evidence')">
+                    Insufficient Visual Evidence
+                    <span class="kbd">Key: 4</span>
+                </button>
+            </div>
+
+            <div class="meta-form">
+                <div class="form-group">
+                    <label>Query Viewpoint</label>
+                    <select id="query-viewpoint">
+                        <option value="frontal_angle">Frontal / 3/4 Angle</option>
+                        <option value="top_down">Top-Down / Crown View</option>
+                        <option value="profile">Side Profile / Shank View</option>
+                        <option value="macro_stone">Close-up Stone / Pavé</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Candidate Viewpoint</label>
+                    <select id="candidate-viewpoint">
+                        <option value="frontal_angle">Frontal / 3/4 Angle</option>
+                        <option value="top_down">Top-Down / Crown View</option>
+                        <option value="profile">Side Profile / Shank View</option>
+                        <option value="macro_stone">Close-up Stone / Pavé</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Visibility / Quality</label>
+                    <select id="visibility-quality">
+                        <option value="clear_full">Clear / Full Piece Visible</option>
+                        <option value="slight_blur">Slight Blur / Glare</option>
+                        <option value="partially_occluded">Partially Occluded / Cropped</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Annotator ID</label>
+                    <input type="text" id="annotator-id" value="senior_cv_lead">
+                </div>
+                <div class="form-group explanation-row">
+                    <label>Visual Justification & Distinguishing Characteristics (prongs, stone count, cut, shank profile, chain):</label>
+                    <textarea id="explanation-text" rows="2" placeholder="e.g. Identical six-prong round solitaire with matching cathedral shank taper; identical metal finish."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentQueue = [];
+        let currentIndex = 0;
+        let zoomLevel = 1.0;
+        let panX = 0, panY = 0;
+
+        const viewportLeft = document.getElementById('viewport-left');
+        const viewportRight = document.getElementById('viewport-right');
+        const imgLeft = document.getElementById('img-left');
+        const imgRight = document.getElementById('img-right');
+        const crosshairLeft = document.getElementById('crosshair-left');
+        const crosshairRight = document.getElementById('crosshair-right');
+        const zoomIndicator = document.getElementById('zoom-indicator');
+        const syncZoomToggle = document.getElementById('sync-zoom-toggle');
+
+        async function fetchStats() {
+            try {
+                const res = await fetch('/api/annotation/stats');
+                const data = await res.json();
+                document.getElementById('stat-total').textContent = `Total: ${data.total_pairs || 0}`;
+                document.getElementById('stat-same').textContent = `Same SKU: ${data.verdicts?.confirmed_same_sku || 0}`;
+                document.getElementById('stat-diff').textContent = `Diff SKU: ${data.verdicts?.confirmed_diff_sku || 0}`;
+                document.getElementById('stat-uncertain').textContent = `Uncertain: ${data.verdicts?.identity_uncertain || 0}`;
+                document.getElementById('stat-insufficient').textContent = `Insufficient: ${data.verdicts?.insufficient_evidence || 0}`;
+            } catch (err) {
+                console.error("Failed to fetch stats:", err);
+            }
+        }
+
+        async function loadPairs(resetIndex = false) {
+            const cat = document.getElementById('filter-category').value;
+            const status = document.getElementById('filter-status').value;
+            try {
+                const res = await fetch(`/api/annotation/pairs?category=${cat}&status=${status}&limit=100`);
+                const data = await res.json();
+                currentQueue = data.pairs || [];
+                if (resetIndex || currentIndex >= currentQueue.length) {
+                    currentIndex = 0;
+                }
+                displayCurrentPair();
+                fetchStats();
+            } catch (err) {
+                console.error("Failed to load pairs:", err);
+            }
+        }
+
+        function displayCurrentPair() {
+            if (currentQueue.length === 0) {
+                document.getElementById('query-header').textContent = "Queue Empty";
+                document.getElementById('candidate-header').textContent = "No pairs matching filter";
+                imgLeft.src = "";
+                imgRight.src = "";
+                return;
+            }
+
+            const p = currentQueue[currentIndex];
+            document.getElementById('query-header').textContent = `Query: ${p.query_id} (${p.category})`;
+            document.getElementById('candidate-header').textContent = `Candidate: ${p.candidate_id}`;
+            document.getElementById('query-meta-header').textContent = `Pair ${currentIndex + 1} of ${currentQueue.length}`;
+            document.getElementById('candidate-meta-header').textContent = p.source_note || `dHash=${p.dhash_distance}`;
+
+            imgLeft.src = p.query_path;
+            imgRight.src = p.candidate_path;
+            document.getElementById('explanation-text').value = "";
+            resetZoom();
+        }
+
+        function prevPair() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                displayCurrentPair();
+            }
+        }
+
+        function nextPair() {
+            if (currentIndex < currentQueue.length - 1) {
+                currentIndex++;
+                displayCurrentPair();
+            }
+        }
+
+        function resetZoom() {
+            zoomLevel = 1.0;
+            panX = 0;
+            panY = 0;
+            applyTransform(imgLeft, 1, 0, 0);
+            applyTransform(imgRight, 1, 0, 0);
+            crosshairLeft.style.display = 'none';
+            crosshairRight.style.display = 'none';
+            zoomIndicator.textContent = "Zoom: 1.0x (Wheel to Zoom)";
+        }
+
+        function applyTransform(img, zoom, px, py) {
+            img.style.transform = `scale(${zoom}) translate(${px}px, ${py}px)`;
+        }
+
+        // Synchronized Zoom & Pan
+        function setupZoomSync(viewport, isLeft) {
+            viewport.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                const delta = e.deltaY < 0 ? 0.25 : -0.25;
+                zoomLevel = Math.max(1.0, Math.min(6.0, zoomLevel + delta));
+                zoomIndicator.textContent = `Zoom: ${zoomLevel.toFixed(1)}x`;
+                
+                const rect = viewport.getBoundingClientRect();
+                const xPct = (e.clientX - rect.left) / rect.width - 0.5;
+                const yPct = (e.clientY - rect.top) / rect.height - 0.5;
+                panX = -xPct * 200 * (zoomLevel - 1);
+                panY = -yPct * 200 * (zoomLevel - 1);
+
+                if (syncZoomToggle.checked) {
+                    applyTransform(imgLeft, zoomLevel, panX, panY);
+                    applyTransform(imgRight, zoomLevel, panX, panY);
+                } else {
+                    applyTransform(isLeft ? imgLeft : imgRight, zoomLevel, panX, panY);
+                }
+            });
+
+            viewport.addEventListener('mousemove', (e) => {
+                const rect = viewport.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                if (zoomLevel > 1.0) {
+                    const xPct = x / rect.width - 0.5;
+                    const yPct = y / rect.height - 0.5;
+                    panX = -xPct * 200 * (zoomLevel - 1);
+                    panY = -yPct * 200 * (zoomLevel - 1);
+
+                    if (syncZoomToggle.checked) {
+                        applyTransform(imgLeft, zoomLevel, panX, panY);
+                        applyTransform(imgRight, zoomLevel, panX, panY);
+                    } else {
+                        applyTransform(isLeft ? imgLeft : imgRight, zoomLevel, panX, panY);
+                    }
+                }
+
+                if (syncZoomToggle.checked) {
+                    crosshairLeft.style.display = 'block';
+                    crosshairRight.style.display = 'block';
+                    crosshairLeft.style.left = `${x}px`;
+                    crosshairLeft.style.top = `${y}px`;
+                    crosshairRight.style.left = `${x}px`;
+                    crosshairRight.style.top = `${y}px`;
+                }
+            });
+
+            viewport.addEventListener('mouseleave', () => {
+                crosshairLeft.style.display = 'none';
+                crosshairRight.style.display = 'none';
+            });
+        }
+
+        setupZoomSync(viewportLeft, true);
+        setupZoomSync(viewportRight, false);
+
+        async function submitVerdict(verdict) {
+            if (currentQueue.length === 0) return;
+            const p = currentQueue[currentIndex];
+            const payload = {
+                pair_id: p.pair_id,
+                query_id: p.query_id,
+                candidate_id: p.candidate_id,
+                verdict: verdict,
+                category: p.category,
+                image_source: "catalog",
+                query_viewpoint: document.getElementById('query-viewpoint').value,
+                candidate_viewpoint: document.getElementById('candidate-viewpoint').value,
+                visibility: document.getElementById('visibility-quality').value,
+                explanation: document.getElementById('explanation-text').value,
+                annotator: document.getElementById('annotator-id').value,
+                provenance: "synchronized_zoom_expert_audit"
+            };
+
+            try {
+                const res = await fetch('/api/annotation/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (res.ok) {
+                    fetchStats();
+                    nextPair();
+                } else {
+                    const err = await res.json();
+                    alert("Submission error: " + (err.detail || "Unknown error"));
+                }
+            } catch (err) {
+                console.error("Submission failed:", err);
+            }
+        }
+
+        // Keyboard Shortcuts: 1, 2, 3, 4
+        window.addEventListener('keydown', (e) => {
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            if (e.key === '1') submitVerdict('confirmed_same_sku');
+            if (e.key === '2') submitVerdict('confirmed_diff_sku');
+            if (e.key === '3') submitVerdict('identity_uncertain');
+            if (e.key === '4') submitVerdict('insufficient_evidence');
+            if (e.key === 'ArrowRight') nextPair();
+            if (e.key === 'ArrowLeft') prevPair();
+            if (e.key === 'r') resetZoom();
+        });
+
+        // Initial Load
+        loadPairs();
+    </script>
+</body>
+</html>

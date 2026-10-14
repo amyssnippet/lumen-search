@@ -1,0 +1,26 @@
+# Alertmanager configuration for Jewellery Visual Retrieval Engine (PH-012)
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname', 'service', 'severity']
+  group_wait: 5s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'staging_test_webhook'
+  routes:
+    - match:
+        severity: critical
+      receiver: 'staging_test_webhook'
+      continue: true
+    - match:
+        severity: warning
+      receiver: 'staging_test_webhook'
+
+receivers:
+  - name: 'staging_test_webhook'
+    webhook_configs:
+      - url: 'http://host.docker.internal:9999/alert-sink'
+        send_resolved: true
+        http_config:
+          follow_redirects: true

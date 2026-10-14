@@ -1,0 +1,15 @@
+# Ruff configuration for Jewellery Visual Retrieval Engine CI/CD
+target-version = "py311"
+line-length = 120
+
+[lint]
+select = [
+    "E9",   # Runtime syntax errors
+    "F63",  # Invalid type comparisons
+    "F7",   # Syntax errors in code
+    "F82",  # Undefined variable references
+]
+ignore = []
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]

@@ -1,0 +1,187 @@
+# ==============================================================================
+# Production Docker Compose for Jewellery Visual Retrieval Engine (Milestone PH-012)
+# Architecture: Isolated PostgreSQL 16 + Redis 7 + Qdrant + Multi-Worker Uvicorn + NGINX Edge
+#
+# Production Security & Isolation Guarantees:
+# 1. Zero Host Port Exposure for Internal Datastores & App:
+#    - PostgreSQL (5432), Redis (6379), Qdrant (6333), and FastAPI Backend (8000)
+#      are NEVER bound or published to host interfaces.
+#    - They communicate exclusively across the isolated bridge network 'jewellery_prod_net'.
+# 2. Strict Edge Reverse-Proxy Ingress:
+#    - NGINX is the ONLY internet/host-facing ingress (ports 80 and 443).
+#    - NGINX enforces TLS 1.3, HSTS, 10MB payload limit, rate limiting, and injects
+#      the cryptographically validated internal proxy secret 'X-Proxy-Secret'.
+# 3. Environment Variable Enforcement:
+#    - All secrets (POSTGRES_PASSWORD, JWT_SECRET_KEY, INTERNAL_PROXY_SECRET) MUST be supplied
+#      via external secret management (e.g. AWS Secrets Manager, HashiCorp Vault, or .env.production).
+#    - The startup secret validator aborts container launch if default staging credentials are detected.
+# ==============================================================================
+
+version: '3.8'
+
+networks:
+  jewellery_prod_net:
+    name: jewellery_prod_net
+    driver: bridge
+
+volumes:
+  jewellery_prod_postgres_data:
+    name: jewellery_prod_postgres_data
+  jewellery_prod_redis_data:
+    name: jewellery_prod_redis_data
+  jewellery_prod_qdrant_data:
+    name: jewellery_prod_qdrant_data
+  jewellery_prod_app_data:
+    name: jewellery_prod_app_data
+
+services:
+  # ----------------------------------------------------------------------------
+  # PostgreSQL 16: Isolated Relational Database
+  # ----------------------------------------------------------------------------
+  prod_postgres:
+    image: postgres:16-alpine
+    container_name: jewellery_prod_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-jewellery_catalog_prod}
+      POSTGRES_USER: ${POSTGRES_USER:-jewellery_prod_user}
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?FATAL: POSTGRES_PASSWORD must be provided in production}"
+    volumes:
+      - jewellery_prod_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-jewellery_prod_user} -d ${POSTGRES_DB:-jewellery_catalog_prod}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.00'
+          memory: 4G
+        reservations:
+          cpus: '1.00'
+          memory: 1G
+    networks:
+      - jewellery_prod_net
+
+  # ----------------------------------------------------------------------------
+  # Redis 7: Distributed Rate Limiting & Fast Cache
+  # ----------------------------------------------------------------------------
+  prod_redis:
+    image: redis:7-alpine
+    container_name: jewellery_prod_redis
+    restart: unless-stopped
+    command: ["redis-server", "--save", "60", "1", "--loglevel", "notice"]
+    volumes:
+      - jewellery_prod_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 1G
+        reservations:
+          cpus: '0.50'
+          memory: 256M
+    networks:
+      - jewellery_prod_net
+
+  # ----------------------------------------------------------------------------
+  # Qdrant Vector Database
+  # ----------------------------------------------------------------------------
+  prod_qdrant:
+    image: qdrant/qdrant:latest
+    container_name: jewellery_prod_qdrant
+    restart: unless-stopped
+    volumes:
+      - jewellery_prod_qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/6333 && echo -e \"GET /readyz HTTP/1.1\\r\\nHost: localhost\\r\\nConnection: close\\r\\n\\r\\n\" >&3 && cat <&3 | grep -q \"200 OK\"' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    deploy:
+      resources:
+        limits:
+          cpus: '4.00'
+          memory: 8G
+        reservations:
+          cpus: '2.00'
+          memory: 4G
+    networks:
+      - jewellery_prod_net
+
+  # ----------------------------------------------------------------------------
+  # FastAPI Application: Multi-Worker Uvicorn Service (Internal Network Only)
+  # ----------------------------------------------------------------------------
+  prod_app:
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+    image: jewellery-retrieval-app:0.2.0
+    container_name: jewellery_prod_app
+    restart: unless-stopped
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]
+    environment:
+      APP_ENV: production
+      DATABASE_URL: postgresql://${POSTGRES_USER:-jewellery_prod_user}:${POSTGRES_PASSWORD}@prod_postgres:5432/${POSTGRES_DB:-jewellery_catalog_prod}
+      REDIS_URL: redis://prod_redis:6379/0
+      QDRANT_HOST: prod_qdrant
+      QDRANT_PORT: "6333"
+      QDRANT_PRODUCTION_ALIAS: jewellery_catalog_mobilenetv4_prod
+      REQUIRE_AUTH: "true"
+      JWT_SECRET_KEY: "${JWT_SECRET_KEY:?FATAL: JWT_SECRET_KEY must be provided in production}"
+      REQUIRE_REVERSE_PROXY: "true"
+      INTERNAL_PROXY_SECRET: "${INTERNAL_PROXY_SECRET:?FATAL: INTERNAL_PROXY_SECRET must be provided in production}"
+      LOG_LEVEL: "INFO"
+    volumes:
+      - jewellery_prod_app_data:/app/data
+    depends_on:
+      prod_postgres:
+        condition: service_healthy
+      prod_redis:
+        condition: service_healthy
+      prod_qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "-H", "X-Proxy-Secret: ${INTERNAL_PROXY_SECRET}", "http://localhost:8000/health/live"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          cpus: '4.00'
+          memory: 8G
+        reservations:
+          cpus: '2.00'
+          memory: 4G
+    networks:
+      - jewellery_prod_net
+
+  # ----------------------------------------------------------------------------
+  # NGINX Edge Reverse Proxy (Sole Public Ingress Point)
+  # ----------------------------------------------------------------------------
+  prod_nginx:
+    image: nginx:1.25-alpine
+    container_name: jewellery_prod_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d/jewellery_production.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx/conf.d/proxy_secret.inc:/etc/nginx/conf.d/proxy_secret.inc:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - prod_app
+    networks:
+      - jewellery_prod_net

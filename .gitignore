@@ -1,0 +1,36 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment and Secrets
+.env
+.env.*
+!.env.*.example
+!.env.*.template
+.proxy_secret*
+*.inc
+proxy_secret.inc
+
+# Storage and Databases
+data/jewellery_catalog.db*
+data/qdrant_storage/
+data/qdrant_snapshots/
+data/index/
+data/models/
+
+# Web / Frontend
+node_modules/
+web/node_modules/
+web/.next/
+
+# Logs and Temp
+*.log
+*.tmp
+.DS_Store
+**/.DS_Store
+output/
+

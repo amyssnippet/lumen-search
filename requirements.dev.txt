@@ -1,0 +1,14 @@
+# Development, Testing, and CI Dependencies
+-r requirements.prod.txt
+
+# Testing & Assertions
+pytest==9.1.1
+iniconfig==2.3.1
+pluggy==1.6.0
+
+# Code Quality & Static Analysis
+ruff>=0.4.0
+bandit>=1.7.8
+
+# Dependency Vulnerability Audit
+pip-audit>=2.7.3

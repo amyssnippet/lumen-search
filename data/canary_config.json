@@ -1,0 +1,12 @@
+{
+  "enabled": false,
+  "candidate_collection": "non_existent_candidate_collection_xyz",
+  "percentage": 0,
+  "allowlisted_tenants": [
+    "vip_tenant_test"
+  ],
+  "salt": "jvr_canary_salt_2026",
+  "fallback_to_production": true,
+  "updated_at": 1791981644.789383,
+  "updated_by": "system"
+}

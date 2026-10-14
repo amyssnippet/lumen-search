@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "candidate_collection": "jewellery_catalog_mobilenetv4_v1",
+  "percentage": 100,
+  "allowlisted_tenants": [],
+  "salt": "test_salt_123",
+  "fallback_to_production": true,
+  "updated_at": 1791981644.2271621,
+  "updated_by": "system"
+}

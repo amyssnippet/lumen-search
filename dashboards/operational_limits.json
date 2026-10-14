@@ -1,0 +1,45 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "title": "Rate Limiting Actions (Count/min)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "targets": [
+        {
+          "expr": "sum(rate(jewellery_ratelimit_events_total[1m])) by (action) * 60",
+          "legendFormat": "{{action}}"
+        }
+      ]
+    },
+    {
+      "title": "Active In-Flight Search Requests",
+      "type": "gauge",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "fieldConfig": {
+        "defaults": { "min": 0, "max": 100 }
+      },
+      "targets": [
+        {
+          "expr": "jewellery_active_requests",
+          "legendFormat": "In-Flight"
+        }
+      ]
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 38,
+  "tags": ["jewellery", "limits", "rate-limiting", "ph009"],
+  "templating": { "list": [] },
+  "time": { "from": "now-1h", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Operational Limits & Rate Limiting",
+  "version": 1
+}

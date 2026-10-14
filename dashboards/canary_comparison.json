@@ -1,0 +1,71 @@
+{
+  "annotations": { "list": [] },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 1,
+  "id": null,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "title": "Traffic Share: Production vs Candidate (QPS)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 },
+      "targets": [
+        {
+          "expr": "sum(rate(jewellery_search_routing_requests_total[1m])) by (route)",
+          "legendFormat": "{{route}}"
+        }
+      ]
+    },
+    {
+      "title": "Configured Canary Percentage (%)",
+      "type": "gauge",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 },
+      "fieldConfig": {
+        "defaults": {
+          "min": 0,
+          "max": 100,
+          "unit": "percent"
+        }
+      },
+      "targets": [
+        {
+          "expr": "jewellery_canary_traffic_percentage",
+          "legendFormat": "Canary Traffic Target"
+        }
+      ]
+    },
+    {
+      "title": "Search Latency p95: Production vs Canary (Seconds)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, sum(rate(jewellery_search_routing_latency_seconds_bucket{stage=\"search\"}[1m])) by (le, route))",
+          "legendFormat": "p95 Search Latency ({{route}})"
+        }
+      ]
+    },
+    {
+      "title": "Canary Routing Fallbacks to Production (Count/min)",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 8 },
+      "targets": [
+        {
+          "expr": "sum(rate(jewellery_canary_routing_fallbacks_total[1m])) by (reason) * 60",
+          "legendFormat": "Fallback: {{reason}}"
+        }
+      ]
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 38,
+  "tags": ["jewellery", "canary", "blue-green", "ph009"],
+  "templating": { "list": [] },
+  "time": { "from": "now-1h", "to": "now" },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Canary Comparison & Rollout",
+  "version": 1
+}
