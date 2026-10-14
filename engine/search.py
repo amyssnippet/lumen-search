@@ -61,10 +61,12 @@ class SearchEngine:
                         return
 
                 # For other models or fallback, try model-specific collection
+                col_name = "jewellery_catalog_dinov3_v1" if "dino" in self.model_name else None
                 q_idx_fallback = QdrantCatalogIndex(
                     model_name=self.model_name,
                     host=self.qdrant_host,
-                    port=self.qdrant_port
+                    port=self.qdrant_port,
+                    collection_name=col_name
                 )
                 if q_idx_fallback.is_online and q_idx_fallback.is_indexed() and q_idx_fallback.embedding_dim == self.encoder.embedding_dim:
                     self.index = q_idx_fallback
@@ -361,19 +363,22 @@ class SearchEngine:
 
         top_sim = results[0]["similarity"] if results else 0.0
 
-        # Calibrate match types and decision semantics
-        # Decisions:
-        # EXACT_MATCH: top_sim >= 0.88
-        # VISUAL_SIMILARITY: 0.52 <= top_sim < 0.88
-        # NO_CONFIDENT_MATCH: top_sim < 0.52 or no results
-        if not results or top_sim < 0.52:
+        # Calibrate match types and decision semantics per model architecture
+        # DINOv3 cosine distribution: Exact >= 0.98, High >= 0.95, Similar >= 0.90
+        # MobileNetV4 cosine distribution: Exact >= 0.88, High >= 0.70, Similar >= 0.52
+        is_dino = "dino" in self.model_name
+        exact_th = 0.98 if is_dino else 0.88
+        high_th = 0.95 if is_dino else 0.70
+        sim_th = 0.90 if is_dino else 0.52
+
+        if not results or top_sim < sim_th:
             decision = "NO_CONFIDENT_MATCH"
             has_reliable_match = False
-            decision_explanation = "No catalogue candidates met the minimum visual similarity threshold (52.0%)."
-        elif top_sim >= 0.88:
+            decision_explanation = f"No catalogue candidates met the minimum visual similarity threshold ({sim_th*100:.1f}%)."
+        elif top_sim >= exact_th:
             decision = "EXACT_MATCH"
             has_reliable_match = True
-            decision_explanation = "Candidate satisfies verified exact-match criteria (>= 88.0%)."
+            decision_explanation = f"Candidate satisfies verified exact-match criteria (>= {exact_th*100:.1f}%)."
         else:
             decision = "VISUAL_SIMILARITY"
             has_reliable_match = True
@@ -381,14 +386,14 @@ class SearchEngine:
 
         for r in results:
             sim = r["similarity"]
-            r["exact_match_candidate"] = sim >= 0.88
-            if sim >= 0.88:
+            r["exact_match_candidate"] = sim >= exact_th
+            if sim >= exact_th:
                 r["match_type"] = "exact_match"
                 r["confidence_label"] = "Verified Exact SKU / Twin"
-            elif sim >= 0.70:
+            elif sim >= high_th:
                 r["match_type"] = "high_confidence"
                 r["confidence_label"] = "High Confidence Candidate"
-            elif sim >= 0.52:
+            elif sim >= sim_th:
                 r["match_type"] = "similar_design"
                 r["confidence_label"] = "Visually Similar Design"
             else:

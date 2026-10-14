@@ -332,6 +332,10 @@ def get_encoder(name: str = "dinov2", device: str = "cpu") -> BaseEncoder:
     elif "dinov3_static" in name_clean:
         return DINOv3ONNXEncoder("data/models/dinov3_vits16_static_int8.onnx")
     elif "dinov3" in name_clean:
+        # shortcut: default to local INT8 ONNX if available to prevent HF downloads, use dinov3_pytorch to force timm
+        onnx_file = Path("data/models/dinov3_vits16_int8.onnx")
+        if onnx_file.exists() and "pytorch" not in name_clean:
+            return DINOv3ONNXEncoder(str(onnx_file))
         return DINOv3Encoder(device=device)
     elif "dino" in name_clean:
         return DINOv2Encoder(device=device)

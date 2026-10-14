@@ -6,6 +6,7 @@ import { SlidersHorizontal, ChevronDown, ChevronUp, Cpu, Database } from "lucide
 export interface SearchOptions {
   category: string;
   searchMode: "similar" | "exact";
+  pipelineMode: "baseline" | "v2_dinov3";
   topK: number;
   robustMode: boolean;
   enableClahe: boolean;
@@ -34,6 +35,35 @@ export function FilterBar({ options, onChange, disabled }: FilterBarProps) {
     <div className="bg-white rounded-2xl border border-charcoal-200 p-4 shadow-subtle space-y-4">
       {/* Primary Quick Controls */}
       <div className="flex flex-wrap items-center justify-between gap-4">
+        {/* Pipeline Architecture Selector (Baseline vs Fine-Grained v2) */}
+        <div className="flex items-center space-x-1 bg-ivory-100 p-1 rounded-xl border border-charcoal-200/80 text-xs">
+          <button
+            type="button"
+            disabled={disabled}
+            onClick={() => onChange({ ...options, pipelineMode: "baseline" })}
+            className={`px-3 py-1.5 font-medium rounded-lg transition ${
+              options.pipelineMode === "baseline"
+                ? "bg-charcoal-900 text-ivory shadow-sm"
+                : "text-charcoal-600 hover:text-charcoal-900 hover:bg-ivory-200"
+            }`}
+          >
+            Baseline (MobileNetV4)
+          </button>
+          <button
+            type="button"
+            disabled={disabled}
+            onClick={() => onChange({ ...options, pipelineMode: "v2_dinov3" })}
+            className={`px-3 py-1.5 font-medium rounded-lg transition flex items-center space-x-1.5 ${
+              options.pipelineMode === "v2_dinov3"
+                ? "bg-gold text-white shadow-sm"
+                : "text-charcoal-600 hover:text-charcoal-900 hover:bg-ivory-200"
+            }`}
+          >
+            <span>Fine-Grained v2 (DINOv3)</span>
+            <span className="text-[10px] bg-white/20 px-1 py-0.5 rounded font-mono font-semibold">POC</span>
+          </button>
+        </div>
+
         {/* Category Pills */}
         <div className="flex items-center space-x-1.5 bg-ivory-100 p-1 rounded-xl border border-charcoal-200/80">
           {categories.map((c) => {
@@ -126,11 +156,11 @@ export function FilterBar({ options, onChange, disabled }: FilterBarProps) {
             <div className="px-2.5 py-1.5 bg-ivory-100 border border-charcoal-200 rounded-lg text-charcoal-700 flex items-center justify-between font-mono text-[11px]">
               <span className="flex items-center">
                 <Cpu className="w-3 h-3 text-gold-deep mr-1" />
-                MobileNetV4 ONNX
+                {options.pipelineMode === "v2_dinov3" ? "DINOv3 ViT-S/16 INT8" : "MobileNetV4 FP32 ONNX"}
               </span>
               <span className="flex items-center">
                 <Database className="w-3 h-3 text-emerald-600 mr-1" />
-                Qdrant HNSW
+                {options.pipelineMode === "v2_dinov3" ? "Qdrant (v2 isolated)" : "Qdrant (staging prod)"}
               </span>
             </div>
           </div>

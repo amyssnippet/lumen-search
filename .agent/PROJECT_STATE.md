@@ -1,13 +1,20 @@
 # Project State: Current Source of Truth
 
 **Date of Update**: 2026-10-14  
-**Current Milestone**: Milestone 24: PH-014 — Retrieval Quality, Candidate Filtering & Real-Image Validation  
-**Database / Execution Environment**: Qdrant 1.12.1 (Docker container on isolated network `jewellery_demo_network`), PostgreSQL 16 Alpine, Redis 7 Alpine with fail-secure token bucket, Next.js 14 App Router & BFF (Alpine Node 20 runtime on port 3000), FastAPI backend, Python 3.11.17 (`.venv`), ONNX Runtime 1.23.2, MobileNetV4 Conv-Small FP32 ONNX (1280-dim)  
+**Current Milestone**: Milestone 25: POC — Fine-Grained Visual Jewellery Retrieval v2 (`poc/visual-retrieval`)  
+**Database / Execution Environment**: Qdrant 1.12.1 (isolated bridge network `jewellery_demo_network`), PostgreSQL 16 Alpine, Redis 7 Alpine with fail-secure token bucket, Next.js 14 App Router & BFF (Alpine Node 20 runtime on port 3000), FastAPI backend, Python 3.11.17 (`.venv`), ONNX Runtime 1.23.2, MobileNetV4 Conv-Small FP32 ONNX (1280-dim, baseline), DINOv3 ViT-S/16 INT8 ONNX (384-dim, v2 POC)  
 
 ---
 
 ## 1. Verified Working Functionality
 
+- **POC — Fine-Grained Visual Jewellery Retrieval v2 (`poc/visual-retrieval`, `RETRIEVAL_V2_EXPERIMENT_REPORT.md`)**:
+  - **Isolated Git Branch & Safe Namespace**: Created branch `poc/visual-retrieval` strictly preserving `main` and `poc/ocr-integration`. Created independent Qdrant collection `jewellery_catalog_dinov3_v1` (384-d, 432 points) alongside production `jewellery_catalog_mobilenetv4_v1` (1280-d, 432 points) with zero cross-contamination.
+  - **Empirical Visual Backbone Gains**: Benchmark Recall@1 across the frozen 6-slice manifest jumped from **56.52%** (MobileNetV4 Baseline) to **61.96%** (DINOv3 INT8 ONNX), with MRR improving from **0.6374** to **0.6716**. On 32 viewpoint-shifted queries (Slice 3), Recall@1 jumped from **53.12% to 68.75% (+15.63%)**.
+  - **Honest Patch Chamfer Evaluation**: Symmetrical patch Chamfer reranking proved counterproductive on 3D jewellery cross-view rotation (Recall@1 dropped from 40% to 26.67%), proving that global self-supervised ViT representations are superior to unconstrained 2D patch matching.
+  - **Calibrated Model-Specific Decisions**: Validated distinct threshold regimes: DINOv3 Exact $\ge 0.980$ (FAR 3.85%, Coverage 65.33%), High $\ge 0.950$, Similar $\ge 0.900$, No Match $< 0.900$; MobileNetV4 Exact $\ge 0.880$, High $\ge 0.700$, Similar $\ge 0.520$, No Match $< 0.520$.
+  - **Full-Stack Next.js 14 Mode Selection**: Added interactive "Baseline (MobileNetV4)" vs "Fine-Grained v2 (DINOv3)" selector in `FilterBar.tsx` and `page.tsx` with dynamic decision explanations, active model architecture badges, and instant re-querying without re-uploading.
+  - **100% Green Automated Test Suite**: Added `tests/test_retrieval_v2.py` (7/7 passing in 15.7s); existing test suite `tests/test_ph014_retrieval_quality.py` (4/4 passing in 20.1s) remains 100% intact.
 - **PH-014 — Retrieval Quality, Candidate Filtering & Real-Image Validation (`engine/qdrant_index.py`, `engine/search.py`, `web/`)**:
   - **Defensive Category Filtering**: Implemented strict pre-filtering and post-fusion candidate filtering in both FastAPI backend and Qdrant client (`norm_cat = category_filter.lower().rstrip("s")`), eliminating 100% of cross-category candidate leakage (e.g. necklaces appearing in ring queries).
   - **Next.js Category Synchronization**: Bound preset and candidate selection in `ImageDropzone.tsx` and `page.tsx` to automatically set the category filter.

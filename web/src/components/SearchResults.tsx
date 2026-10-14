@@ -71,7 +71,7 @@ export function SearchResults({
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h2 className="text-sm font-semibold text-charcoal-900 font-serif">
             Retrieved Candidates ({response.results.length})
@@ -79,6 +79,20 @@ export function SearchResults({
           <p className="text-[11px] text-charcoal-500 font-mono">
             Query ID: {response.query_id.slice(0, 16)} • Model: {response.model_name}
           </p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <span className={`text-[11px] font-medium px-2.5 py-1 rounded-full border ${
+            response.decision === "EXACT_MATCH"
+              ? "bg-emerald-50 text-emerald-800 border-emerald-300"
+              : response.decision === "VISUAL_SIMILARITY"
+              ? "bg-sky-50 text-sky-800 border-sky-300"
+              : "bg-amber-50 text-amber-800 border-amber-300"
+          }`}>
+            {response.decision === "EXACT_MATCH" ? "Exact SKU Match" : response.decision === "VISUAL_SIMILARITY" ? "Visual Similarity" : "No Confident Match"}
+          </span>
+          <span className="text-[11px] font-mono text-charcoal-600 bg-ivory-100 border border-charcoal-200 px-2 py-0.5 rounded-md">
+            {response.model_name.includes("dino") ? "DINOv3 ViT (v2 POC)" : "MobileNetV4 (Baseline)"}
+          </span>
         </div>
       </div>
 
@@ -89,7 +103,7 @@ export function SearchResults({
           <div className="space-y-0.5">
             <p className="font-semibold text-amber-900">No Confident Exact Match Found</p>
             <p className="text-amber-800">
-              The query image does not match any indexed physical SKU above the verified threshold (≥88.0%). The candidates below are low-similarity nearest neighbours displayed for style exploration only.
+              {response.decision_explanation || "The query image does not match any indexed physical SKU above the verified exact-match criteria."} The candidates below are nearest neighbours displayed for style exploration only.
             </p>
           </div>
         </div>

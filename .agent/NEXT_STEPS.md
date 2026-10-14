@@ -1,9 +1,9 @@
 # Next Steps & Post-Milestone Roadmap
 
-**Milestone 24: PH-014 — Retrieval Quality, Candidate Filtering & Real-Image Validation** is **COMPLETED**.  
-The interactive enterprise visual search application is fully operational and verified at **`http://localhost:3000`** with Next.js 14, isolated Docker Compose stack (`docker-compose.demo.yml`), strict category filtering, batched Qdrant search (16.84 ms p50 vector retrieval), defensible No-Match decisions, live MobileNetV4 ONNX (1280-d) inference, and **192 passing automated tests (100% green)**.
+**Milestone 25: POC — Fine-Grained Visual Jewellery Retrieval v2** is **COMPLETED on branch `poc/visual-retrieval`**.  
+The interactive enterprise visual search application is fully operational and verified at **`http://localhost:3000`** with Next.js 14, isolated Docker Compose stack (`docker-compose.demo.yml`), live pipeline switching between MobileNetV4 Baseline and DINOv3 Fine-Grained v2, isolated Qdrant collection (`jewellery_catalog_dinov3_v1`), calibrated decision semantics, and **100% green automated tests**.
 
-Detailed findings, benchmark results across 6 slices, and latency profiling breakdown are recorded in [`PH-014-retrieval-quality-report.md`](file:///Users/amol/Developer/search/PH-014-retrieval-quality-report.md).
+Detailed empirical comparison, 6-slice benchmark results, and patch Chamfer correspondence analysis are recorded in [`RETRIEVAL_V2_EXPERIMENT_REPORT.md`](file:///Users/amol/Developer/search/RETRIEVAL_V2_EXPERIMENT_REPORT.md) and [`output/retrieval_v2_benchmark_results.json`](file:///Users/amol/Developer/search/output/retrieval_v2_benchmark_results.json).
 
 Prior pre-production software engineering issues, credential remediation, performance gate reconciliation, network topology isolation, automated backup scheduling, and Alertmanager delivery drills remain verified.
 

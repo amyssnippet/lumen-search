@@ -48,10 +48,14 @@ export interface SearchResult {
   exact_match_candidate?: boolean;
   match_type?: string;
   confidence_label?: string;
+  best_crop?: string;
+  global_score?: number;
+  chamfer_score?: number;
 }
 
 export interface SearchResponse {
   model_name: string;
+  pipeline_mode?: string;
   backend: string;
   search_mode: string;
   category_filter?: string;

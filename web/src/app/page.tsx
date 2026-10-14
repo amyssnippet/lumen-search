@@ -14,6 +14,7 @@ export default function SearchPage() {
   const [searchOptions, setSearchOptions] = useState<SearchOptions>({
     category: "all",
     searchMode: "similar",
+    pipelineMode: "baseline",
     topK: 10,
     robustMode: true,
     enableClahe: false,
@@ -56,6 +57,7 @@ export default function SearchPage() {
       formData.append("file", file);
       formData.append("category_filter", options.category);
       formData.append("search_mode", options.searchMode);
+      formData.append("model", options.pipelineMode === "v2_dinov3" ? "dinov3" : "mobilenetv4");
       formData.append("top_k", options.topK.toString());
       formData.append("robust_mode", options.robustMode.toString());
       formData.append("enable_clahe", options.enableClahe.toString());
