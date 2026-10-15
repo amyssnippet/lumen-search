@@ -13,13 +13,13 @@ from engine.index import CatalogIndex
 
 def main():
     parser = argparse.ArgumentParser(description="Index jewellery catalog embeddings")
-    parser.add_argument("--model", type=str, default="dinov2", choices=["dinov2", "clip", "dinov3", "all"], help="Embedding model")
+    parser.add_argument("--model", type=str, default="mobilenetv4", choices=["mobilenetv4", "dinov3", "dinov2", "clip", "all"], help="Embedding model")
     parser.add_argument("--manifest", type=str, default="data/manifest.json", help="Path to manifest JSON")
     parser.add_argument("--index-dir", type=str, default="data/index", help="Output directory for index")
     parser.add_argument("--batch-size", type=int, default=32, help="Batch size for embedding generation")
     args = parser.parse_args()
 
-    models = ["dinov2", "clip", "dinov3"] if args.model == "all" else [args.model]
+    models = ["mobilenetv4", "dinov3"] if args.model == "all" else [args.model]
 
     for m in models:
         print(f"\n==========================================")
