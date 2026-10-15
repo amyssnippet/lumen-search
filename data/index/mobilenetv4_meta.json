@@ -1,0 +1,3890 @@
+[
+  {
+    "id": "necklace_1",
+    "filename": "necklace_1.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_1.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_034",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_100",
+    "filename": "necklace_100.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_100.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_035",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_101",
+    "filename": "necklace_101.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_101.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_036",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_102",
+    "filename": "necklace_102.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_102.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_037",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_103",
+    "filename": "necklace_103.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_103.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_038",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_104",
+    "filename": "necklace_104.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_104.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_039",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_106",
+    "filename": "necklace_106.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_106.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_040",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_107",
+    "filename": "necklace_107.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_107.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_002",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_108",
+    "filename": "necklace_108.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_108.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_002",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_109",
+    "filename": "necklace_109.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_109.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_002",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_110",
+    "filename": "necklace_110.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_110.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_041",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_111",
+    "filename": "necklace_111.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_111.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_042",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_112",
+    "filename": "necklace_112.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_112.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_043",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_113",
+    "filename": "necklace_113.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_113.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_044",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_114",
+    "filename": "necklace_114.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_114.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_045",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_117",
+    "filename": "necklace_117.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_117.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_048",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_12",
+    "filename": "necklace_12.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_12.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_051",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_120",
+    "filename": "necklace_120.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_120.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_052",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_121",
+    "filename": "necklace_121.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_121.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_053",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_122",
+    "filename": "necklace_122.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_122.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_054",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_123",
+    "filename": "necklace_123.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_123.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_055",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_124",
+    "filename": "necklace_124.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_124.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_056",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_125",
+    "filename": "necklace_125.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_125.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_057",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_127",
+    "filename": "necklace_127.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_127.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_058",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_128",
+    "filename": "necklace_128.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_128.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_129",
+    "filename": "necklace_129.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_129.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_131",
+    "filename": "necklace_131.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_131.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_132",
+    "filename": "necklace_132.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_132.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_059",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_134",
+    "filename": "necklace_134.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_134.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_060",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_135",
+    "filename": "necklace_135.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_135.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_061",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_136",
+    "filename": "necklace_136.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_136.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_137",
+    "filename": "necklace_137.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_137.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_138",
+    "filename": "necklace_138.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_138.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_062",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_139",
+    "filename": "necklace_139.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_139.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_063",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_141",
+    "filename": "necklace_141.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_141.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_013",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_143",
+    "filename": "necklace_143.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_143.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_064",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_144",
+    "filename": "necklace_144.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_144.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_065",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_145",
+    "filename": "necklace_145.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_145.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_012",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_146",
+    "filename": "necklace_146.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_146.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_147",
+    "filename": "necklace_147.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_147.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_149",
+    "filename": "necklace_149.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_149.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_151",
+    "filename": "necklace_151.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_151.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_066",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_153",
+    "filename": "necklace_153.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_153.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_067",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_154",
+    "filename": "necklace_154.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_154.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_068",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_155",
+    "filename": "necklace_155.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_155.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_069",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_158",
+    "filename": "necklace_158.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_158.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_16",
+    "filename": "necklace_16.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_16.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_014",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_160",
+    "filename": "necklace_160.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_160.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_015",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_161",
+    "filename": "necklace_161.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_161.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_070",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_162",
+    "filename": "necklace_162.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_162.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_071",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_164",
+    "filename": "necklace_164.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_164.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_072",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_165",
+    "filename": "necklace_165.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_165.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_073",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_167",
+    "filename": "necklace_167.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_167.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_074",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_169",
+    "filename": "necklace_169.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_169.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_075",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_170",
+    "filename": "necklace_170.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_170.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_076",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_171",
+    "filename": "necklace_171.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_171.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_077",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_173",
+    "filename": "necklace_173.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_173.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_079",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_174",
+    "filename": "necklace_174.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_174.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_080",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_176",
+    "filename": "necklace_176.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_176.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_082",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_177",
+    "filename": "necklace_177.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_177.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_083",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_178",
+    "filename": "necklace_178.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_178.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_084",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_179",
+    "filename": "necklace_179.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_179.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_085",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_18",
+    "filename": "necklace_18.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_18.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_003",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_181",
+    "filename": "necklace_181.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_181.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_087",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_182",
+    "filename": "necklace_182.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_182.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_088",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_183",
+    "filename": "necklace_183.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_183.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_089",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_184",
+    "filename": "necklace_184.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_184.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_090",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_186",
+    "filename": "necklace_186.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_186.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_092",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_187",
+    "filename": "necklace_187.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_187.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_093",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_188",
+    "filename": "necklace_188.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_188.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_094",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_189",
+    "filename": "necklace_189.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_189.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_095",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_19",
+    "filename": "necklace_19.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_19.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_003",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_190",
+    "filename": "necklace_190.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_190.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_096",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_191",
+    "filename": "necklace_191.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_191.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_097",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_192",
+    "filename": "necklace_192.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_192.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_098",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_193",
+    "filename": "necklace_193.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_193.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_099",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_194",
+    "filename": "necklace_194.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_194.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_100",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_195",
+    "filename": "necklace_195.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_195.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_101",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_197",
+    "filename": "necklace_197.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_197.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_016",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_198",
+    "filename": "necklace_198.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_198.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_102",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_199",
+    "filename": "necklace_199.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_199.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_103",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_2",
+    "filename": "necklace_2.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_2.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_104",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_20",
+    "filename": "necklace_20.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_20.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_003",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_201",
+    "filename": "necklace_201.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_201.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_106",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_202",
+    "filename": "necklace_202.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_202.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_107",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_204",
+    "filename": "necklace_204.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_204.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_017",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_205",
+    "filename": "necklace_205.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_205.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_108",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_206",
+    "filename": "necklace_206.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_206.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_109",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_207",
+    "filename": "necklace_207.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_207.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_000",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_208",
+    "filename": "necklace_208.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_208.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_110",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_209",
+    "filename": "necklace_209.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_209.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_111",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_212",
+    "filename": "necklace_212.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_212.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_001",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_213",
+    "filename": "necklace_213.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_213.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_112",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_214",
+    "filename": "necklace_214.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_214.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_113",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_215",
+    "filename": "necklace_215.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_215.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_001",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_216",
+    "filename": "necklace_216.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_216.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_001",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_217",
+    "filename": "necklace_217.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_217.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_001",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_218",
+    "filename": "necklace_218.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_218.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_114",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_219",
+    "filename": "necklace_219.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_219.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_001",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_22",
+    "filename": "necklace_22.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_22.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_005",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_220",
+    "filename": "necklace_220.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_220.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_115",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_221",
+    "filename": "necklace_221.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_221.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_116",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_222",
+    "filename": "necklace_222.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_222.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_117",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_224",
+    "filename": "necklace_224.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_224.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_006",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_225",
+    "filename": "necklace_225.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_225.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_006",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_226",
+    "filename": "necklace_226.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_226.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_118",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_227",
+    "filename": "necklace_227.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_227.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_119",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_228",
+    "filename": "necklace_228.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_228.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_120",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_229",
+    "filename": "necklace_229.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_229.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_121",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_23",
+    "filename": "necklace_23.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_23.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_005",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_230",
+    "filename": "necklace_230.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_230.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_122",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_232",
+    "filename": "necklace_232.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_232.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_018",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_234",
+    "filename": "necklace_234.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_234.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_019",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_235",
+    "filename": "necklace_235.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_235.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_123",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_237",
+    "filename": "necklace_237.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_237.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_124",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_238",
+    "filename": "necklace_238.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_238.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_125",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_239",
+    "filename": "necklace_239.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_239.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_126",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_24",
+    "filename": "necklace_24.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_24.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_127",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_240",
+    "filename": "necklace_240.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_240.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_128",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_241",
+    "filename": "necklace_241.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_241.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_129",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_242",
+    "filename": "necklace_242.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_242.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_130",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_243",
+    "filename": "necklace_243.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_243.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_131",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_244",
+    "filename": "necklace_244.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_244.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_132",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_245",
+    "filename": "necklace_245.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_245.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_133",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_246",
+    "filename": "necklace_246.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_246.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_134",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_248",
+    "filename": "necklace_248.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_248.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_136",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_249",
+    "filename": "necklace_249.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_249.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_137",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_25",
+    "filename": "necklace_25.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_25.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_138",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_250",
+    "filename": "necklace_250.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_250.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_139",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_251",
+    "filename": "necklace_251.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_251.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_140",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_252",
+    "filename": "necklace_252.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_252.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_141",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_253",
+    "filename": "necklace_253.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_253.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_142",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_254",
+    "filename": "necklace_254.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_254.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_143",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_255",
+    "filename": "necklace_255.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_255.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_144",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_258",
+    "filename": "necklace_258.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_258.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_147",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_26",
+    "filename": "necklace_26.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_26.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_149",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_260",
+    "filename": "necklace_260.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_260.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_150",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_261",
+    "filename": "necklace_261.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_261.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_151",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_262",
+    "filename": "necklace_262.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_262.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_152",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_264",
+    "filename": "necklace_264.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_264.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_154",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_265",
+    "filename": "necklace_265.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_265.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_155",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_267",
+    "filename": "necklace_267.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_267.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_020",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_268",
+    "filename": "necklace_268.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_268.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_156",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_269",
+    "filename": "necklace_269.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_269.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_157",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_270",
+    "filename": "necklace_270.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_270.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_158",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_272",
+    "filename": "necklace_272.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_272.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_160",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_274",
+    "filename": "necklace_274.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_274.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_161",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_275",
+    "filename": "necklace_275.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_275.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_162",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_276",
+    "filename": "necklace_276.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_276.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_163",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_277",
+    "filename": "necklace_277.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_277.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_164",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_278",
+    "filename": "necklace_278.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_278.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_165",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_279",
+    "filename": "necklace_279.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_279.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_022",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_28",
+    "filename": "necklace_28.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_28.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_021",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_280",
+    "filename": "necklace_280.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_280.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_166",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_281",
+    "filename": "necklace_281.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_281.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_167",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_282",
+    "filename": "necklace_282.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_282.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_168",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_283",
+    "filename": "necklace_283.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_283.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_169",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_284",
+    "filename": "necklace_284.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_284.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_170",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_285",
+    "filename": "necklace_285.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_285.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_171",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_286",
+    "filename": "necklace_286.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_286.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_172",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_287",
+    "filename": "necklace_287.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_287.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_173",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_289",
+    "filename": "necklace_289.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_289.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_175",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_29",
+    "filename": "necklace_29.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_29.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_176",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_290",
+    "filename": "necklace_290.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_290.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_177",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_291",
+    "filename": "necklace_291.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_291.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_178",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_292",
+    "filename": "necklace_292.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_292.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_179",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_293",
+    "filename": "necklace_293.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_293.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_180",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_294",
+    "filename": "necklace_294.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_294.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_181",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_295",
+    "filename": "necklace_295.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_295.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_182",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_296",
+    "filename": "necklace_296.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_296.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_183",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_297",
+    "filename": "necklace_297.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_297.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_184",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_298",
+    "filename": "necklace_298.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_298.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_185",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_299",
+    "filename": "necklace_299.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_299.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_186",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_3",
+    "filename": "necklace_3.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_3.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_187",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_300",
+    "filename": "necklace_300.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_300.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_188",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_301",
+    "filename": "necklace_301.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_301.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_189",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_302",
+    "filename": "necklace_302.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_302.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_190",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_303",
+    "filename": "necklace_303.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_303.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_191",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_304",
+    "filename": "necklace_304.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_304.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_192",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_305",
+    "filename": "necklace_305.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_305.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_193",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_306",
+    "filename": "necklace_306.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_306.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_194",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_307",
+    "filename": "necklace_307.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_307.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_195",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_308",
+    "filename": "necklace_308.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_308.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_196",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_309",
+    "filename": "necklace_309.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_309.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_197",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_31",
+    "filename": "necklace_31.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_31.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_023",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_310",
+    "filename": "necklace_310.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_310.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_198",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_311",
+    "filename": "necklace_311.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_311.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_199",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_312",
+    "filename": "necklace_312.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_312.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_200",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_313",
+    "filename": "necklace_313.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_313.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_201",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_314",
+    "filename": "necklace_314.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_314.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_202",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_315",
+    "filename": "necklace_315.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_315.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_203",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_316",
+    "filename": "necklace_316.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_316.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_204",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_317",
+    "filename": "necklace_317.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_317.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_205",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_319",
+    "filename": "necklace_319.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_319.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_008",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_32",
+    "filename": "necklace_32.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_32.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_011",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_320",
+    "filename": "necklace_320.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_320.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_008",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_33",
+    "filename": "necklace_33.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_33.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_206",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_34",
+    "filename": "necklace_34.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_34.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_207",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_35",
+    "filename": "necklace_35.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_35.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_208",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_36",
+    "filename": "necklace_36.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_36.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_209",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_37",
+    "filename": "necklace_37.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_37.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_210",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_38",
+    "filename": "necklace_38.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_38.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_211",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_39",
+    "filename": "necklace_39.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_39.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_212",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_4",
+    "filename": "necklace_4.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_4.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_213",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_41",
+    "filename": "necklace_41.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_41.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_214",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_42",
+    "filename": "necklace_42.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_42.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_215",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_43",
+    "filename": "necklace_43.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_43.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_024",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_44",
+    "filename": "necklace_44.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_44.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_216",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_45",
+    "filename": "necklace_45.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_45.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_217",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_46",
+    "filename": "necklace_46.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_46.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_218",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_47",
+    "filename": "necklace_47.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_47.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_219",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_48",
+    "filename": "necklace_48.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_48.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_220",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_49",
+    "filename": "necklace_49.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_49.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_221",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_50",
+    "filename": "necklace_50.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_50.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_222",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_51",
+    "filename": "necklace_51.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_51.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_223",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_52",
+    "filename": "necklace_52.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_52.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_007",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_53",
+    "filename": "necklace_53.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_53.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_007",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_54",
+    "filename": "necklace_54.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_54.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_224",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_56",
+    "filename": "necklace_56.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_56.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_025",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_57",
+    "filename": "necklace_57.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_57.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_225",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_59",
+    "filename": "necklace_59.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_59.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_026",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_60",
+    "filename": "necklace_60.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_60.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_226",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_62",
+    "filename": "necklace_62.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_62.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_004",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_63",
+    "filename": "necklace_63.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_63.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_004",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_64",
+    "filename": "necklace_64.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_64.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_004",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_65",
+    "filename": "necklace_65.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_65.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_227",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_66",
+    "filename": "necklace_66.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_66.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_228",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_67",
+    "filename": "necklace_67.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_67.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_229",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_68",
+    "filename": "necklace_68.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_68.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_230",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_69",
+    "filename": "necklace_69.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_69.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_231",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_7",
+    "filename": "necklace_7.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_7.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_027",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_70",
+    "filename": "necklace_70.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_70.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_232",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_71",
+    "filename": "necklace_71.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_71.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_233",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_72",
+    "filename": "necklace_72.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_72.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_234",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_73",
+    "filename": "necklace_73.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_73.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_235",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_74",
+    "filename": "necklace_74.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_74.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_236",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_75",
+    "filename": "necklace_75.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_75.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_237",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_77",
+    "filename": "necklace_77.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_77.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_028",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_78",
+    "filename": "necklace_78.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_78.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_238",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_79",
+    "filename": "necklace_79.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_79.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_239",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_80",
+    "filename": "necklace_80.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_80.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_240",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_81",
+    "filename": "necklace_81.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_81.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_241",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_82",
+    "filename": "necklace_82.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_82.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_242",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_83",
+    "filename": "necklace_83.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_83.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_243",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_84",
+    "filename": "necklace_84.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_84.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_244",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_85",
+    "filename": "necklace_85.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_85.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_245",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_86",
+    "filename": "necklace_86.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_86.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_246",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_87",
+    "filename": "necklace_87.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_87.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_247",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_89",
+    "filename": "necklace_89.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_89.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_249",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_93",
+    "filename": "necklace_93.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_93.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_251",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_95",
+    "filename": "necklace_95.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_95.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_009",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_96",
+    "filename": "necklace_96.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_96.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_009",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_97",
+    "filename": "necklace_97.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_97.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_252",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_98",
+    "filename": "necklace_98.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_98.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_253",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "necklace_99",
+    "filename": "necklace_99.jpg",
+    "rel_path": "Jewellery_Data/necklace/necklace_99.jpg",
+    "category": "necklace",
+    "cluster_id": "cluster_254",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring-downloaded",
+    "filename": "ring-downloaded.png",
+    "rel_path": "Jewellery_Data/ring/ring-downloaded.png",
+    "category": "ring",
+    "cluster_id": "cluster_255",
+    "width": 109,
+    "height": 102
+  },
+  {
+    "id": "ring-jay-test",
+    "filename": "ring-jay-test.png",
+    "rel_path": "Jewellery_Data/ring/ring-jay-test.png",
+    "category": "ring",
+    "cluster_id": "cluster_256",
+    "width": 111,
+    "height": 106
+  },
+  {
+    "id": "ring_001",
+    "filename": "ring_001.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_001.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_257",
+    "width": 242,
+    "height": 209
+  },
+  {
+    "id": "ring_002",
+    "filename": "ring_002.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_002.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_258",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_003",
+    "filename": "ring_003.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_003.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_259",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_004",
+    "filename": "ring_004.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_004.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_260",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_005",
+    "filename": "ring_005.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_005.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_261",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_006",
+    "filename": "ring_006.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_006.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_262",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_007",
+    "filename": "ring_007.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_007.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_263",
+    "width": 274,
+    "height": 184
+  },
+  {
+    "id": "ring_008",
+    "filename": "ring_008.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_008.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_264",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_009",
+    "filename": "ring_009.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_009.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_265",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_013",
+    "filename": "ring_013.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_013.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_266",
+    "width": 198,
+    "height": 255
+  },
+  {
+    "id": "ring_014",
+    "filename": "ring_014.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_014.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_267",
+    "width": 249,
+    "height": 203
+  },
+  {
+    "id": "ring_015",
+    "filename": "ring_015.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_015.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_268",
+    "width": 252,
+    "height": 200
+  },
+  {
+    "id": "ring_016",
+    "filename": "ring_016.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_016.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_269",
+    "width": 242,
+    "height": 209
+  },
+  {
+    "id": "ring_017",
+    "filename": "ring_017.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_017.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_270",
+    "width": 246,
+    "height": 205
+  },
+  {
+    "id": "ring_018",
+    "filename": "ring_018.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_018.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_271",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_019",
+    "filename": "ring_019.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_019.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_272",
+    "width": 257,
+    "height": 196
+  },
+  {
+    "id": "ring_020",
+    "filename": "ring_020.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_020.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_273",
+    "width": 246,
+    "height": 205
+  },
+  {
+    "id": "ring_021",
+    "filename": "ring_021.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_021.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_274",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_022",
+    "filename": "ring_022.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_022.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_275",
+    "width": 246,
+    "height": 205
+  },
+  {
+    "id": "ring_023",
+    "filename": "ring_023.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_023.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_276",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_024",
+    "filename": "ring_024.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_024.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_277",
+    "width": 240,
+    "height": 210
+  },
+  {
+    "id": "ring_025",
+    "filename": "ring_025.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_025.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_278",
+    "width": 225,
+    "height": 224
+  },
+  {
+    "id": "ring_026",
+    "filename": "ring_026.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_026.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_279",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_027",
+    "filename": "ring_027.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_027.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_280",
+    "width": 241,
+    "height": 209
+  },
+  {
+    "id": "ring_028",
+    "filename": "ring_028.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_028.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_281",
+    "width": 203,
+    "height": 249
+  },
+  {
+    "id": "ring_029",
+    "filename": "ring_029.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_029.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_282",
+    "width": 196,
+    "height": 196
+  },
+  {
+    "id": "ring_030",
+    "filename": "ring_030.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_030.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_283",
+    "width": 252,
+    "height": 200
+  },
+  {
+    "id": "ring_031",
+    "filename": "ring_031.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_031.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_284",
+    "width": 252,
+    "height": 200
+  },
+  {
+    "id": "ring_032",
+    "filename": "ring_032.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_032.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_285",
+    "width": 224,
+    "height": 225
+  },
+  {
+    "id": "ring_033",
+    "filename": "ring_033.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_033.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_286",
+    "width": 246,
+    "height": 205
+  },
+  {
+    "id": "ring_034",
+    "filename": "ring_034.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_034.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_287",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_035",
+    "filename": "ring_035.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_035.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_288",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_036",
+    "filename": "ring_036.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_036.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_289",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_037",
+    "filename": "ring_037.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_037.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_290",
+    "width": 263,
+    "height": 192
+  },
+  {
+    "id": "ring_038",
+    "filename": "ring_038.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_038.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_291",
+    "width": 240,
+    "height": 160
+  },
+  {
+    "id": "ring_040",
+    "filename": "ring_040.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_040.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_293",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_041",
+    "filename": "ring_041.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_041.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_294",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_042",
+    "filename": "ring_042.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_042.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_295",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_043",
+    "filename": "ring_043.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_043.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_296",
+    "width": 275,
+    "height": 183
+  },
+  {
+    "id": "ring_044",
+    "filename": "ring_044.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_044.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_297",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_045",
+    "filename": "ring_045.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_045.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_298",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_046",
+    "filename": "ring_046.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_046.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_299",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_047",
+    "filename": "ring_047.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_047.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_300",
+    "width": 213,
+    "height": 237
+  },
+  {
+    "id": "ring_048",
+    "filename": "ring_048.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_048.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_301",
+    "width": 224,
+    "height": 224
+  },
+  {
+    "id": "ring_049",
+    "filename": "ring_049.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_049.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_302",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_050",
+    "filename": "ring_050.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_050.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_303",
+    "width": 252,
+    "height": 200
+  },
+  {
+    "id": "ring_051",
+    "filename": "ring_051.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_051.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_304",
+    "width": 189,
+    "height": 267
+  },
+  {
+    "id": "ring_052",
+    "filename": "ring_052.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_052.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_305",
+    "width": 245,
+    "height": 205
+  },
+  {
+    "id": "ring_053",
+    "filename": "ring_053.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_053.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_306",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_054",
+    "filename": "ring_054.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_054.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_307",
+    "width": 259,
+    "height": 194
+  },
+  {
+    "id": "ring_055",
+    "filename": "ring_055.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_055.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_308",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_056",
+    "filename": "ring_056.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_056.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_309",
+    "width": 246,
+    "height": 205
+  },
+  {
+    "id": "ring_057",
+    "filename": "ring_057.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_057.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_310",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_058",
+    "filename": "ring_058.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_058.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_311",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_059",
+    "filename": "ring_059.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_059.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_312",
+    "width": 224,
+    "height": 225
+  },
+  {
+    "id": "ring_061",
+    "filename": "ring_061.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_061.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_314",
+    "width": 225,
+    "height": 225
+  },
+  {
+    "id": "ring_062",
+    "filename": "ring_062.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_062.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_315",
+    "width": 189,
+    "height": 267
+  },
+  {
+    "id": "ring_063",
+    "filename": "ring_063.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_063.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_316",
+    "width": 189,
+    "height": 267
+  },
+  {
+    "id": "ring_064",
+    "filename": "ring_064.png",
+    "rel_path": "Jewellery_Data/ring/ring_064.png",
+    "category": "ring",
+    "cluster_id": "cluster_317",
+    "width": 90,
+    "height": 90
+  },
+  {
+    "id": "ring_065",
+    "filename": "ring_065.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_065.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_318",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_066",
+    "filename": "ring_066.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_066.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_319",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_067",
+    "filename": "ring_067.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_067.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_320",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_069",
+    "filename": "ring_069.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_069.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_322",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_070",
+    "filename": "ring_070.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_070.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_323",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_071",
+    "filename": "ring_071.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_071.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_324",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_072",
+    "filename": "ring_072.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_072.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_325",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_073",
+    "filename": "ring_073.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_073.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_326",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_074",
+    "filename": "ring_074.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_074.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_327",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_075",
+    "filename": "ring_075.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_075.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_328",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_076",
+    "filename": "ring_076.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_076.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_329",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_077",
+    "filename": "ring_077.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_077.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_330",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_078",
+    "filename": "ring_078.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_078.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_331",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_079",
+    "filename": "ring_079.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_079.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_332",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_081",
+    "filename": "ring_081.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_081.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_030",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_082",
+    "filename": "ring_082.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_082.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_333",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_084",
+    "filename": "ring_084.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_084.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_031",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_085",
+    "filename": "ring_085.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_085.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_334",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_086",
+    "filename": "ring_086.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_086.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_335",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_088",
+    "filename": "ring_088.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_088.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_337",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_089",
+    "filename": "ring_089.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_089.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_338",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_090",
+    "filename": "ring_090.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_090.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_339",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_091",
+    "filename": "ring_091.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_091.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_340",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_092",
+    "filename": "ring_092.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_092.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_341",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_094",
+    "filename": "ring_094.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_094.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_343",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_095",
+    "filename": "ring_095.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_095.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_344",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_096",
+    "filename": "ring_096.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_096.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_345",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_097",
+    "filename": "ring_097.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_097.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_346",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_098",
+    "filename": "ring_098.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_098.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_347",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_099",
+    "filename": "ring_099.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_099.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_348",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_100",
+    "filename": "ring_100.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_100.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_349",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_101",
+    "filename": "ring_101.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_101.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_350",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_102",
+    "filename": "ring_102.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_102.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_351",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_103",
+    "filename": "ring_103.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_103.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_352",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_104",
+    "filename": "ring_104.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_104.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_353",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_105",
+    "filename": "ring_105.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_105.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_354",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_106",
+    "filename": "ring_106.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_106.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_355",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_107",
+    "filename": "ring_107.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_107.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_356",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_108",
+    "filename": "ring_108.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_108.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_030",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_109",
+    "filename": "ring_109.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_109.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_357",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_110",
+    "filename": "ring_110.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_110.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_358",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_111",
+    "filename": "ring_111.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_111.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_359",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_112",
+    "filename": "ring_112.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_112.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_360",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_114",
+    "filename": "ring_114.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_114.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_362",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_115",
+    "filename": "ring_115.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_115.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_363",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_116",
+    "filename": "ring_116.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_116.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_010",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_117",
+    "filename": "ring_117.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_117.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_364",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_118",
+    "filename": "ring_118.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_118.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_365",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_120",
+    "filename": "ring_120.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_120.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_367",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_121",
+    "filename": "ring_121.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_121.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_368",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_122",
+    "filename": "ring_122.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_122.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_369",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_123",
+    "filename": "ring_123.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_123.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_370",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_124",
+    "filename": "ring_124.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_124.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_371",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_125",
+    "filename": "ring_125.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_125.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_372",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_126",
+    "filename": "ring_126.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_126.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_373",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_127",
+    "filename": "ring_127.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_127.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_374",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_128",
+    "filename": "ring_128.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_128.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_375",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_129",
+    "filename": "ring_129.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_129.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_376",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_130",
+    "filename": "ring_130.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_130.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_377",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_131",
+    "filename": "ring_131.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_131.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_378",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_132",
+    "filename": "ring_132.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_132.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_379",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_134",
+    "filename": "ring_134.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_134.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_381",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_135",
+    "filename": "ring_135.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_135.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_382",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_136",
+    "filename": "ring_136.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_136.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_383",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_137",
+    "filename": "ring_137.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_137.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_384",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_138",
+    "filename": "ring_138.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_138.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_385",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_139",
+    "filename": "ring_139.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_139.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_386",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_140",
+    "filename": "ring_140.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_140.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_387",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_141",
+    "filename": "ring_141.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_141.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_388",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_142",
+    "filename": "ring_142.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_142.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_389",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_143",
+    "filename": "ring_143.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_143.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_390",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_144",
+    "filename": "ring_144.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_144.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_391",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_145",
+    "filename": "ring_145.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_145.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_392",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_147",
+    "filename": "ring_147.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_147.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_394",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_148",
+    "filename": "ring_148.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_148.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_395",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_149",
+    "filename": "ring_149.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_149.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_396",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_150",
+    "filename": "ring_150.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_150.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_397",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_151",
+    "filename": "ring_151.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_151.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_398",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_152",
+    "filename": "ring_152.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_152.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_399",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_154",
+    "filename": "ring_154.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_154.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_401",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_155",
+    "filename": "ring_155.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_155.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_032",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_156",
+    "filename": "ring_156.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_156.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_402",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_157",
+    "filename": "ring_157.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_157.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_403",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_158",
+    "filename": "ring_158.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_158.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_404",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_159",
+    "filename": "ring_159.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_159.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_405",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_160",
+    "filename": "ring_160.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_160.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_406",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_161",
+    "filename": "ring_161.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_161.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_407",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_162",
+    "filename": "ring_162.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_162.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_033",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_163",
+    "filename": "ring_163.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_163.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_408",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_164",
+    "filename": "ring_164.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_164.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_029",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_165",
+    "filename": "ring_165.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_165.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_409",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_166",
+    "filename": "ring_166.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_166.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_410",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_168",
+    "filename": "ring_168.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_168.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_412",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_170",
+    "filename": "ring_170.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_170.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_414",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_171",
+    "filename": "ring_171.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_171.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_415",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_172",
+    "filename": "ring_172.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_172.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_032",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_173",
+    "filename": "ring_173.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_173.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_416",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_174",
+    "filename": "ring_174.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_174.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_417",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_175",
+    "filename": "ring_175.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_175.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_418",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_176",
+    "filename": "ring_176.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_176.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_033",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_177",
+    "filename": "ring_177.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_177.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_419",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_178",
+    "filename": "ring_178.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_178.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_420",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_179",
+    "filename": "ring_179.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_179.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_421",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_180",
+    "filename": "ring_180.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_180.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_422",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_181",
+    "filename": "ring_181.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_181.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_031",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_182",
+    "filename": "ring_182.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_182.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_423",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_183",
+    "filename": "ring_183.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_183.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_424",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_184",
+    "filename": "ring_184.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_184.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_425",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_185",
+    "filename": "ring_185.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_185.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_426",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_187",
+    "filename": "ring_187.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_187.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_010",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_188",
+    "filename": "ring_188.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_188.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_427",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_189",
+    "filename": "ring_189.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_189.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_428",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_190",
+    "filename": "ring_190.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_190.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_429",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_191",
+    "filename": "ring_191.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_191.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_430",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_192",
+    "filename": "ring_192.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_192.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_431",
+    "width": 262,
+    "height": 262
+  },
+  {
+    "id": "ring_193",
+    "filename": "ring_193.jpg",
+    "rel_path": "Jewellery_Data/ring/ring_193.jpg",
+    "category": "ring",
+    "cluster_id": "cluster_432",
+    "width": 262,
+    "height": 262
+  }
+]

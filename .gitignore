@@ -19,8 +19,14 @@ proxy_secret.inc
 data/jewellery_catalog.db*
 data/qdrant_storage/
 data/qdrant_snapshots/
-data/index/
-data/models/
+data/index/*
+!data/index/mobilenetv4_embeddings.npy
+!data/index/mobilenetv4_meta.json
+!data/index/dinov3_embeddings.npy
+!data/index/dinov3_meta.json
+data/models/*
+!data/models/mobilenetv4_conv_small_fp32.onnx
+!data/models/dinov3_vits16_int8.onnx
 
 # Web / Frontend
 node_modules/

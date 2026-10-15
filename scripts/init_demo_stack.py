@@ -128,6 +128,28 @@ def setup_qdrant_collection():
     else:
         logger.info(f"Collection '{target_collection}' already populated with vectors.")
 
+    # Initialize DINOv3 collection if index files are present
+    dino_target = "jewellery_catalog_dinov3_v1"
+    dino_emb = Path("data/index/dinov3_embeddings.npy")
+    if dino_emb.exists():
+        dino_needs_rebuild = False
+        if dino_target not in colls:
+            dino_needs_rebuild = True
+        else:
+            dinfo = qc.get_collection(dino_target)
+            if not dinfo.points_count or dinfo.points_count < 100:
+                dino_needs_rebuild = True
+        if dino_needs_rebuild:
+            logger.info(f"Rebuilding collection '{dino_target}' with DINOv3 vectors...")
+            rebuild_model_index(
+                model_name="dinov3",
+                host=QDRANT_HOST,
+                port=QDRANT_PORT,
+                recreate=True
+            )
+        else:
+            logger.info(f"Collection '{dino_target}' already populated with vectors.")
+
     # Ensure alias binds to target collection
     existing_aliases = qc.get_aliases()
     aliases_for_target = [a.alias_name for a in existing_aliases.aliases if a.collection_name == target_collection]
