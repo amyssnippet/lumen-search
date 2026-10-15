@@ -150,21 +150,24 @@ def seed_database():
                 logger.info(f"Created user: {ud['email']}")
         db.commit()
 
-        # 4. Ingest products and assets from data/ingestion_manifest.json for default_tenant
+        # 4. Ingest products and assets from data/ingestion_manifest.json or data/manifest.json for default_tenant
         manifest_path = Path("data/ingestion_manifest.json")
+        if not manifest_path.exists():
+            manifest_path = Path("data/manifest.json")
+
         if manifest_path.exists():
             with open(manifest_path, "r") as fp:
                 manifest = json.load(fp)
 
-            records = manifest.get("records", [])
-            logger.info(f"Loading {len(records)} manifest records into relational catalog...")
+            records = manifest.get("records") or manifest.get("images", [])
+            logger.info(f"Loading {len(records)} records from {manifest_path} into relational catalog...")
 
             # Group by SKU or identity group
             products_created = 0
             assets_created = 0
 
             for r in records:
-                img_id = r["image_id"]
+                img_id = r.get("image_id") or r.get("id")
                 cat = r.get("category", "unknown")
                 raw_sku = r.get("sku_id")
                 if not raw_sku:
