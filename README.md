@@ -71,15 +71,19 @@ Search scores are cosine similarities mapped into calibrated decision bands:
 
 ## 🧪 Verification & Diagnostics
 
-### Run Automated E2E Verification Inside Docker
-Verify that all 5 containers, database tables, Qdrant vectors, and search endpoints are 100% operational:
+### Run Automated E2E Verification
+Verify that all frontend pages, backend APIs, Qdrant vectors, and search endpoints are 100% operational:
 ```bash
-docker exec -it jewellery_demo_backend python scripts/verify_demo_e2e.py
+# Via host Python (requires requests)
+python scripts/verify_demo_e2e.py
+
+# Or verify web service directly via curl
+curl -I http://localhost:3000/
 ```
 
 ### Run Retrieval Test Suite
 ```bash
-docker exec -it jewellery_demo_backend pytest tests/test_retrieval_v2.py -v
+pytest tests/test_retrieval_v2.py -v
 ```
 
 ### Inspect Container Logs
